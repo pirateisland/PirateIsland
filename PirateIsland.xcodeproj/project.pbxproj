@@ -7,50 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEF183412230F9D800121D93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF183402230F9D800121D93 /* AppDelegate.m */; };
-		AEF183442230F9D800121D93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF183432230F9D800121D93 /* ViewController.m */; };
-		AEF183472230F9D800121D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF183452230F9D800121D93 /* Main.storyboard */; };
+		2C4814EC223133BD00D57D9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E6223133BD00D57D9C /* main.m */; };
+		2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E7223133BD00D57D9C /* AppDelegate.m */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
 		AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */; };
-		AEF1834F2230F9DA00121D93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF1834E2230F9DA00121D93 /* main.m */; };
-		AEF183592230F9DA00121D93 /* PirateIslandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF183582230F9DA00121D93 /* PirateIslandTests.m */; };
-		AEF183642230F9DA00121D93 /* PirateIslandUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF183632230F9DA00121D93 /* PirateIslandUITests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AEF183552230F9DA00121D93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEF183342230F9D800121D93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEF1833B2230F9D800121D93;
-			remoteInfo = PirateIsland;
-		};
-		AEF183602230F9DA00121D93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEF183342230F9D800121D93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEF1833B2230F9D800121D93;
-			remoteInfo = PirateIsland;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		2C4814E5223133BD00D57D9C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C4814E6223133BD00D57D9C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C4814E7223133BD00D57D9C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C4814E8223133BD00D57D9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4814EF2231344B00D57D9C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AEF1833C2230F9D800121D93 /* PirateIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF1833F2230F9D800121D93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AEF183402230F9D800121D93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AEF183422230F9D800121D93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEF183432230F9D800121D93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AEF183462230F9D800121D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEF183482230F9DA00121D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF1834B2230F9DA00121D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AEF1834D2230F9DA00121D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEF1834E2230F9DA00121D93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AEF183542230F9DA00121D93 /* PirateIslandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PirateIslandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF183582230F9DA00121D93 /* PirateIslandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PirateIslandTests.m; sourceTree = "<group>"; };
-		AEF1835A2230F9DA00121D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEF1835F2230F9DA00121D93 /* PirateIslandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PirateIslandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF183632230F9DA00121D93 /* PirateIslandUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PirateIslandUITests.m; sourceTree = "<group>"; };
-		AEF183652230F9DA00121D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,29 +32,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEF183512230F9DA00121D93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEF1835C2230F9DA00121D93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C4814E4223133BD00D57D9C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2C4814E5223133BD00D57D9C /* AppDelegate.h */,
+				2C4814E7223133BD00D57D9C /* AppDelegate.m */,
+				2C4814E8223133BD00D57D9C /* Info.plist */,
+				2C4814E6223133BD00D57D9C /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2C4814E9223133BD00D57D9C /* Library(三方库) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Library(三方库)";
+			sourceTree = "<group>";
+		};
+		2C4814EA223133BD00D57D9C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2C4814EF2231344B00D57D9C /* PrefixHeader.pch */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		2C4814EB223133BD00D57D9C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		AEF183332230F9D800121D93 = {
 			isa = PBXGroup;
 			children = (
 				AEF1833E2230F9D800121D93 /* PirateIsland */,
-				AEF183572230F9DA00121D93 /* PirateIslandTests */,
-				AEF183622230F9DA00121D93 /* PirateIslandUITests */,
 				AEF1833D2230F9D800121D93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				AEF1833C2230F9D800121D93 /* PirateIsland.app */,
-				AEF183542230F9DA00121D93 /* PirateIslandTests.xctest */,
-				AEF1835F2230F9DA00121D93 /* PirateIslandUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,35 +87,14 @@
 		AEF1833E2230F9D800121D93 /* PirateIsland */ = {
 			isa = PBXGroup;
 			children = (
-				AEF1833F2230F9D800121D93 /* AppDelegate.h */,
-				AEF183402230F9D800121D93 /* AppDelegate.m */,
-				AEF183422230F9D800121D93 /* ViewController.h */,
-				AEF183432230F9D800121D93 /* ViewController.m */,
-				AEF183452230F9D800121D93 /* Main.storyboard */,
+				2C4814EB223133BD00D57D9C /* Class */,
+				2C4814EA223133BD00D57D9C /* Headers */,
+				2C4814E9223133BD00D57D9C /* Library(三方库) */,
+				2C4814E4223133BD00D57D9C /* SupportingFiles */,
 				AEF183482230F9DA00121D93 /* Assets.xcassets */,
 				AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */,
-				AEF1834D2230F9DA00121D93 /* Info.plist */,
-				AEF1834E2230F9DA00121D93 /* main.m */,
 			);
 			path = PirateIsland;
-			sourceTree = "<group>";
-		};
-		AEF183572230F9DA00121D93 /* PirateIslandTests */ = {
-			isa = PBXGroup;
-			children = (
-				AEF183582230F9DA00121D93 /* PirateIslandTests.m */,
-				AEF1835A2230F9DA00121D93 /* Info.plist */,
-			);
-			path = PirateIslandTests;
-			sourceTree = "<group>";
-		};
-		AEF183622230F9DA00121D93 /* PirateIslandUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AEF183632230F9DA00121D93 /* PirateIslandUITests.m */,
-				AEF183652230F9DA00121D93 /* Info.plist */,
-			);
-			path = PirateIslandUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,42 +117,6 @@
 			productReference = AEF1833C2230F9D800121D93 /* PirateIsland.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AEF183532230F9DA00121D93 /* PirateIslandTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEF1836B2230F9DA00121D93 /* Build configuration list for PBXNativeTarget "PirateIslandTests" */;
-			buildPhases = (
-				AEF183502230F9DA00121D93 /* Sources */,
-				AEF183512230F9DA00121D93 /* Frameworks */,
-				AEF183522230F9DA00121D93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AEF183562230F9DA00121D93 /* PBXTargetDependency */,
-			);
-			name = PirateIslandTests;
-			productName = PirateIslandTests;
-			productReference = AEF183542230F9DA00121D93 /* PirateIslandTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AEF1835E2230F9DA00121D93 /* PirateIslandUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEF1836E2230F9DA00121D93 /* Build configuration list for PBXNativeTarget "PirateIslandUITests" */;
-			buildPhases = (
-				AEF1835B2230F9DA00121D93 /* Sources */,
-				AEF1835C2230F9DA00121D93 /* Frameworks */,
-				AEF1835D2230F9DA00121D93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AEF183612230F9DA00121D93 /* PBXTargetDependency */,
-			);
-			name = PirateIslandUITests;
-			productName = PirateIslandUITests;
-			productReference = AEF1835F2230F9DA00121D93 /* PirateIslandUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,14 +128,6 @@
 				TargetAttributes = {
 					AEF1833B2230F9D800121D93 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					AEF183532230F9DA00121D93 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = AEF1833B2230F9D800121D93;
-					};
-					AEF1835E2230F9DA00121D93 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = AEF1833B2230F9D800121D93;
 					};
 				};
 			};
@@ -224,8 +145,6 @@
 			projectRoot = "";
 			targets = (
 				AEF1833B2230F9D800121D93 /* PirateIsland */,
-				AEF183532230F9DA00121D93 /* PirateIslandTests */,
-				AEF1835E2230F9DA00121D93 /* PirateIslandUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,21 +156,6 @@
 			files = (
 				AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */,
 				AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */,
-				AEF183472230F9D800121D93 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEF183522230F9DA00121D93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEF1835D2230F9DA00121D93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,52 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF183442230F9D800121D93 /* ViewController.m in Sources */,
-				AEF1834F2230F9DA00121D93 /* main.m in Sources */,
-				AEF183412230F9D800121D93 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEF183502230F9DA00121D93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEF183592230F9DA00121D93 /* PirateIslandTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEF1835B2230F9DA00121D93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEF183642230F9DA00121D93 /* PirateIslandUITests.m in Sources */,
+				2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */,
+				2C4814EC223133BD00D57D9C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		AEF183562230F9DA00121D93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEF1833B2230F9D800121D93 /* PirateIsland */;
-			targetProxy = AEF183552230F9DA00121D93 /* PBXContainerItemProxy */;
-		};
-		AEF183612230F9DA00121D93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEF1833B2230F9D800121D93 /* PirateIsland */;
-			targetProxy = AEF183602230F9DA00121D93 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		AEF183452230F9D800121D93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEF183462230F9D800121D93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,15 +301,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6N9M5S46W5;
-				INFOPLIST_FILE = PirateIsland/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PirateIsland/Headers/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PirateIsland/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PirateIsland.PirateIsland;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -452,90 +321,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6N9M5S46W5;
-				INFOPLIST_FILE = PirateIsland/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PirateIsland/Headers/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PirateIsland/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PirateIsland.PirateIsland;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		AEF1836C2230F9DA00121D93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6N9M5S46W5;
-				INFOPLIST_FILE = PirateIslandTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = PirateIsland.PirateIslandTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PirateIsland.app/PirateIsland";
-			};
-			name = Debug;
-		};
-		AEF1836D2230F9DA00121D93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6N9M5S46W5;
-				INFOPLIST_FILE = PirateIslandTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = PirateIsland.PirateIslandTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PirateIsland.app/PirateIsland";
-			};
-			name = Release;
-		};
-		AEF1836F2230F9DA00121D93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6N9M5S46W5;
-				INFOPLIST_FILE = PirateIslandUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = PirateIsland.PirateIslandUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PirateIsland;
-			};
-			name = Debug;
-		};
-		AEF183702230F9DA00121D93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6N9M5S46W5;
-				INFOPLIST_FILE = PirateIslandUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = PirateIsland.PirateIslandUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PirateIsland;
 			};
 			name = Release;
 		};
@@ -556,24 +354,6 @@
 			buildConfigurations = (
 				AEF183692230F9DA00121D93 /* Debug */,
 				AEF1836A2230F9DA00121D93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEF1836B2230F9DA00121D93 /* Build configuration list for PBXNativeTarget "PirateIslandTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEF1836C2230F9DA00121D93 /* Debug */,
-				AEF1836D2230F9DA00121D93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEF1836E2230F9DA00121D93 /* Build configuration list for PBXNativeTarget "PirateIslandUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEF1836F2230F9DA00121D93 /* Debug */,
-				AEF183702230F9DA00121D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

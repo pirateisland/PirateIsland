@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PLTabBarController.h"
+#import "PLNavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"hello world");
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.rootViewController = [[PLNavigationViewController alloc] initWithRootViewControllerNoWrapping:[[PLTabBarController alloc] init]];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

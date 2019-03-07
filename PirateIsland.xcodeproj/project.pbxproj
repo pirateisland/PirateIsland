@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C4814EC223133BD00D57D9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E6223133BD00D57D9C /* main.m */; };
 		2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E7223133BD00D57D9C /* AppDelegate.m */; };
+		2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814F32231388700D57D9C /* PLTabBarController.m */; };
+		2C4814F72231396E00D57D9C /* PLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814F62231396E00D57D9C /* PLBaseViewController.m */; };
+		2C4814FA223139F400D57D9C /* PLNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814F9223139F400D57D9C /* PLNavigationViewController.m */; };
+		2C4814FD22313B7B00D57D9C /* PLYanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814FC22313B7B00D57D9C /* PLYanaViewController.m */; };
+		2C48150122313D0600D57D9C /* PLHanLinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48150022313D0600D57D9C /* PLHanLinViewController.m */; };
+		7C25E33A7EF24C8CAA397FFC /* Pods_PirateIsland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
 		AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,9 +25,22 @@
 		2C4814E7223133BD00D57D9C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2C4814E8223133BD00D57D9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4814EF2231344B00D57D9C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2C4814F22231388700D57D9C /* PLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLTabBarController.h; sourceTree = "<group>"; };
+		2C4814F32231388700D57D9C /* PLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLTabBarController.m; sourceTree = "<group>"; };
+		2C4814F52231396E00D57D9C /* PLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLBaseViewController.h; sourceTree = "<group>"; };
+		2C4814F62231396E00D57D9C /* PLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLBaseViewController.m; sourceTree = "<group>"; };
+		2C4814F8223139F400D57D9C /* PLNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNavigationViewController.h; sourceTree = "<group>"; };
+		2C4814F9223139F400D57D9C /* PLNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNavigationViewController.m; sourceTree = "<group>"; };
+		2C4814FB22313B7B00D57D9C /* PLYanaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLYanaViewController.h; sourceTree = "<group>"; };
+		2C4814FC22313B7B00D57D9C /* PLYanaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLYanaViewController.m; sourceTree = "<group>"; };
+		2C4814FF22313D0600D57D9C /* PLHanLinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHanLinViewController.h; sourceTree = "<group>"; };
+		2C48150022313D0600D57D9C /* PLHanLinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHanLinViewController.m; sourceTree = "<group>"; };
+		4DB5D5EAE2599975C559EA1F /* Pods-PirateIsland.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateIsland.release.xcconfig"; path = "Target Support Files/Pods-PirateIsland/Pods-PirateIsland.release.xcconfig"; sourceTree = "<group>"; };
+		9660252AEE6ADE333289619C /* Pods-PirateIsland.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateIsland.debug.xcconfig"; path = "Target Support Files/Pods-PirateIsland/Pods-PirateIsland.debug.xcconfig"; sourceTree = "<group>"; };
 		AEF1833C2230F9D800121D93 /* PirateIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF183482230F9DA00121D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF1834B2230F9DA00121D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PirateIsland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C25E33A7EF24C8CAA397FFC /* Pods_PirateIsland.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,11 +81,52 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		2C4814EB223133BD00D57D9C /* Class */ = {
+		2C4814F02231383A00D57D9C /* CommonUnit */ = {
 			isa = PBXGroup;
 			children = (
+				2C4814F22231388700D57D9C /* PLTabBarController.h */,
+				2C4814F32231388700D57D9C /* PLTabBarController.m */,
+				2C4814F52231396E00D57D9C /* PLBaseViewController.h */,
+				2C4814F62231396E00D57D9C /* PLBaseViewController.m */,
+				2C4814F8223139F400D57D9C /* PLNavigationViewController.h */,
+				2C4814F9223139F400D57D9C /* PLNavigationViewController.m */,
 			);
-			path = Class;
+			path = CommonUnit;
+			sourceTree = "<group>";
+		};
+		2C4814F12231384300D57D9C /* YanaUnit */ = {
+			isa = PBXGroup;
+			children = (
+				2C4814FB22313B7B00D57D9C /* PLYanaViewController.h */,
+				2C4814FC22313B7B00D57D9C /* PLYanaViewController.m */,
+			);
+			path = YanaUnit;
+			sourceTree = "<group>";
+		};
+		2C4814FE22313CE000D57D9C /* HLUnit */ = {
+			isa = PBXGroup;
+			children = (
+				2C4814FF22313D0600D57D9C /* PLHanLinViewController.h */,
+				2C48150022313D0600D57D9C /* PLHanLinViewController.m */,
+			);
+			path = HLUnit;
+			sourceTree = "<group>";
+		};
+		84E0340EABDA66E4E497C4A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE1A4E2062B0A0EAA6FDF294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9660252AEE6ADE333289619C /* Pods-PirateIsland.debug.xcconfig */,
+				4DB5D5EAE2599975C559EA1F /* Pods-PirateIsland.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		AEF183332230F9D800121D93 = {
@@ -73,6 +134,8 @@
 			children = (
 				AEF1833E2230F9D800121D93 /* PirateIsland */,
 				AEF1833D2230F9D800121D93 /* Products */,
+				AE1A4E2062B0A0EAA6FDF294 /* Pods */,
+				84E0340EABDA66E4E497C4A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +150,9 @@
 		AEF1833E2230F9D800121D93 /* PirateIsland */ = {
 			isa = PBXGroup;
 			children = (
-				2C4814EB223133BD00D57D9C /* Class */,
+				2C4814F02231383A00D57D9C /* CommonUnit */,
+				2C4814F12231384300D57D9C /* YanaUnit */,
+				2C4814FE22313CE000D57D9C /* HLUnit */,
 				2C4814EA223133BD00D57D9C /* Headers */,
 				2C4814E9223133BD00D57D9C /* Library(三方库) */,
 				2C4814E4223133BD00D57D9C /* SupportingFiles */,
@@ -104,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEF183682230F9DA00121D93 /* Build configuration list for PBXNativeTarget "PirateIsland" */;
 			buildPhases = (
+				1BD4093B45303FE84589347A /* [CP] Check Pods Manifest.lock */,
 				AEF183382230F9D800121D93 /* Sources */,
 				AEF183392230F9D800121D93 /* Frameworks */,
 				AEF1833A2230F9D800121D93 /* Resources */,
+				CDCFA57BC3A36F5F45157EA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +190,7 @@
 		AEF183342230F9D800121D93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PL;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = PL;
 				TargetAttributes = {
@@ -161,13 +229,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BD4093B45303FE84589347A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PirateIsland-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCFA57BC3A36F5F45157EA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateIsland/Pods-PirateIsland-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateIsland/Pods-PirateIsland-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PirateIsland/Pods-PirateIsland-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEF183382230F9D800121D93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C48150122313D0600D57D9C /* PLHanLinViewController.m in Sources */,
 				2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */,
+				2C4814FD22313B7B00D57D9C /* PLYanaViewController.m in Sources */,
+				2C4814FA223139F400D57D9C /* PLNavigationViewController.m in Sources */,
+				2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */,
 				2C4814EC223133BD00D57D9C /* main.m in Sources */,
+				2C4814F72231396E00D57D9C /* PLBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +414,7 @@
 		};
 		AEF183692230F9DA00121D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9660252AEE6ADE333289619C /* Pods-PirateIsland.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -319,6 +435,7 @@
 		};
 		AEF1836A2230F9DA00121D93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB5D5EAE2599975C559EA1F /* Pods-PirateIsland.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

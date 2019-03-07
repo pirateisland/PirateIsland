@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, 130, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, 1300, 30)];
     label.text = @"ViewController.h";
     label.textColor = UIColor.yellowColor;
     label.backgroundColor = UIColor.redColor;

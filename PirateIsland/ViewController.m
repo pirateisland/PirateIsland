@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, 130, 30)];
+    label.text = @"ViewController.h";
+    label.textColor = UIColor.yellowColor;
+    label.backgroundColor = UIColor.redColor;
+    label.font = [UIFont boldSystemFontOfSize:30.0f];
+    [self.view addSubview:label];
 }
 
 

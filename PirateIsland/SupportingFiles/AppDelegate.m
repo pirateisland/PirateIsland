@@ -10,7 +10,7 @@
 #import "PLTabBarController.h"
 #import "PLNavigationViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
 @end
 

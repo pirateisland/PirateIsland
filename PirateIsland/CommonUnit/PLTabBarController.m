@@ -10,7 +10,7 @@
 #import "PLYanaViewController.h"
 #import "PLHanLinViewController.h"
 
-@interface PLTabBarController () <UITabBarControllerDelegate, CYLTabBarControllerDelegate>
+@interface PLTabBarController ()
 
 @end
 

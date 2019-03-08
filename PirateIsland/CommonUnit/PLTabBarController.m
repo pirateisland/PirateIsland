@@ -36,13 +36,13 @@
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
                                                  CYLTabBarItemTitle : @"YANA",
-                                                 CYLTabBarItemImage : @"home_normal",  /* NSString and UIImage are supported*/
-                                                 CYLTabBarItemSelectedImage : @"home_highlight"  /* NSString and UIImage are supported*/
+                                                 CYLTabBarItemImage : @"home_yana_normal",  /* NSString and UIImage are supported*/
+                                                 CYLTabBarItemSelectedImage : @"home_yana_select"  /* NSString and UIImage are supported*/
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
                                                   CYLTabBarItemTitle : @"HANL",
-                                                  CYLTabBarItemImage : @"fishpond_normal",
-                                                  CYLTabBarItemSelectedImage : @"fishpond_highlight"
+                                                  CYLTabBarItemImage : @"home_hanlin_normal",
+                                                  CYLTabBarItemSelectedImage : @"home_hanlin_select"
                                                   };
     NSArray *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C17666722325A9400269E64 /* PLCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17666622325A9400269E64 /* PLCollectionView.m */; };
+		2C17666A22325B7100269E64 /* PLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17666922325B7100269E64 /* PLCollectionViewCell.m */; };
+		2C17666D223266E800269E64 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17666B223266E800269E64 /* UINavigationBar+Awesome.m */; };
 		2C4814EC223133BD00D57D9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E6223133BD00D57D9C /* main.m */; };
 		2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E7223133BD00D57D9C /* AppDelegate.m */; };
 		2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814F32231388700D57D9C /* PLTabBarController.m */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C17666522325A9400269E64 /* PLCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCollectionView.h; sourceTree = "<group>"; };
+		2C17666622325A9400269E64 /* PLCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCollectionView.m; sourceTree = "<group>"; };
+		2C17666822325B7100269E64 /* PLCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCollectionViewCell.h; sourceTree = "<group>"; };
+		2C17666922325B7100269E64 /* PLCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCollectionViewCell.m; sourceTree = "<group>"; };
+		2C17666B223266E800269E64 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		2C17666C223266E800269E64 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		2C4814E5223133BD00D57D9C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C4814E6223133BD00D57D9C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C4814E7223133BD00D57D9C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,6 +108,12 @@
 			children = (
 				2C4814FB22313B7B00D57D9C /* PLYanaViewController.h */,
 				2C4814FC22313B7B00D57D9C /* PLYanaViewController.m */,
+				2C17666522325A9400269E64 /* PLCollectionView.h */,
+				2C17666622325A9400269E64 /* PLCollectionView.m */,
+				2C17666822325B7100269E64 /* PLCollectionViewCell.h */,
+				2C17666922325B7100269E64 /* PLCollectionViewCell.m */,
+				2C17666C223266E800269E64 /* UINavigationBar+Awesome.h */,
+				2C17666B223266E800269E64 /* UINavigationBar+Awesome.m */,
 			);
 			path = YanaUnit;
 			sourceTree = "<group>";
@@ -276,13 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C17666722325A9400269E64 /* PLCollectionView.m in Sources */,
 				2C48150122313D0600D57D9C /* PLHanLinViewController.m in Sources */,
 				2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */,
 				2C4814FD22313B7B00D57D9C /* PLYanaViewController.m in Sources */,
 				2C4814FA223139F400D57D9C /* PLNavigationViewController.m in Sources */,
+				2C17666A22325B7100269E64 /* PLCollectionViewCell.m in Sources */,
 				2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */,
 				2C4814EC223133BD00D57D9C /* main.m in Sources */,
 				2C4814F72231396E00D57D9C /* PLBaseViewController.m in Sources */,
+				2C17666D223266E800269E64 /* UINavigationBar+Awesome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

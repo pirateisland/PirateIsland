@@ -10,7 +10,7 @@
 #import "PLYanaViewController.h"
 #import "PLHanLinViewController.h"
 
-@interface PLTabBarController ()
+@interface PLTabBarController () <UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
 @end
 
@@ -22,7 +22,6 @@
     }
     CYLTabBarController *tabBarController = [CYLTabBarController tabBarControllerWithViewControllers:self.rootViewControllers tabBarItemsAttributes:self.tabBarItemsAttributesForController];
     [self customizeTabBarAppearance:tabBarController];
-    
     return (self = (PLTabBarController *)tabBarController);
 }
 
@@ -87,6 +86,9 @@
     // iOS10 后 需要使用 `-[CYLTabBarController hideTabBadgeBackgroundSeparator]` 见 AppDelegate 类中的演示;
     //    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
 }
+
+
+
 
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PLYanaShareVC.h"
+#import "PLShareView.h"
 
 @interface PLYanaShareVC ()
 
@@ -20,4 +21,11 @@
     [self.navigationController.navigationBar setBarTintColor:UIColor.yellowColor];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    PLShareView *shareView = [[PLShareView alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    [shareView show];
+    shareView.didSelectShareBtn = ^(PLShareViewItemType shareType) {
+        NSLog(@"shareType == %ld",shareType);
+    };
+}
 @end

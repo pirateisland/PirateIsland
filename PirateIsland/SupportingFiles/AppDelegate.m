@@ -62,7 +62,6 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectControl:(UIControl *)control {
     UIView *animationView = [control cyl_tabImageView];
-    NSLog(@"%ld",[self cyl_tabBarController].selectedIndex);
     if (tabBarController.selectedIndex == 0) {
         [self addScaleAnimationOnView:animationView repeatCount:1];
     } else {

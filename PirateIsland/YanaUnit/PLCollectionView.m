@@ -25,7 +25,6 @@
 
 - (void)configureViews {
     self.backgroundColor = UIColor.whiteColor;
-//    self.showsVerticalScrollIndicator = NO;  //隐藏滚动条
     [self registerClass:PLCollectionViewCell.class forCellWithReuseIdentifier:kCollectionCellReuseIdenti];
     self.dataSource = self;
     self.delegate = self;
@@ -45,7 +44,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+    !self.viewDidSelectItem?:self.viewDidSelectItem(indexPath);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PLCollectionView : UICollectionView
 
-@property (nonatomic, strong) void(^viewDidScroll)(UIScrollView *scrollView);
+@property (nonatomic, copy) void(^viewDidScroll)(UIScrollView *scrollView);
+@property (nonatomic, copy) void(^viewDidSelectItem)(NSIndexPath *indexPath);
 
 @end
 

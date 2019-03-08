@@ -9,6 +9,7 @@
 #import "PLYanaViewController.h"
 #import "PLCollectionView.h"
 #import "UINavigationBar+Awesome.h"
+#import "PLYanaShareVC.h"
 
 @interface PLYanaViewController ()
 
@@ -58,6 +59,10 @@
         } else {
             [weakSelf.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:1]];
         }
+    };
+    
+    collectionView.viewDidSelectItem = ^(NSIndexPath * _Nonnull indexPath) {
+        [weakSelf.navigationController pushViewController:[[PLYanaShareVC alloc] init] animated:YES];
     };
 }
 

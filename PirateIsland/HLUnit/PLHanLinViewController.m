@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.yellowColor;
     self.navigationItem.title = @"HANLIN";
+    NSLog(@"this is mine");
 }
 
 @end

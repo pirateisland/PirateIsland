@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -468,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F857DAAR97;
+				DEVELOPMENT_TEAM = H89WQT8Z9D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PirateIsland/Headers/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PirateIsland/SupportingFiles/Info.plist";
@@ -491,7 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F857DAAR97;
+				DEVELOPMENT_TEAM = H89WQT8Z9D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PirateIsland/Headers/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PirateIsland/SupportingFiles/Info.plist";

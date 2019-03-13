@@ -19,8 +19,9 @@
 
 static CGFloat kSelfHeight = 200.0f;
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
+- (instancetype)init {
+    self = [super init];
+    if (self) {
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4f];
         [self setUp];
     }
@@ -43,27 +44,37 @@ static CGFloat kSelfHeight = 200.0f;
         shareView.backgroundColor = [UIColor whiteColor];
         [self addSubview:shareView];
         [shareView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.bottom.right.mas_equalTo(0);
+            make.leading.trailing.mas_equalTo(0);
             make.height.mas_equalTo(kSelfHeight);
+            make.bottom.offset(kSelfHeight);
         }];
         shareView;
     });
     
     // topView
-    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 150)];
+    UIView *topView = [[UIView alloc] init]; //WithFrame:CGRectMake(0, 0, kScreenWidth, 150)];
     topView.backgroundColor = HEXColor(0xF6F7F8);
     [self.shareView addSubview:topView];
+    [topView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.top.trailing.offset(0);
+        make.height.mas_equalTo(150);
+    }];
     
     // 关闭Btn
     UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    closeBtn.frame = CGRectMake(0, topView.bottom, kScreenWidth, 50);
+//    closeBtn.frame = CGRectMake(0, topView.bottom, kScreenWidth, 50);
     closeBtn.backgroundColor = [UIColor whiteColor];
     closeBtn.titleLabel.font = [UIFont systemFontOfSize:18.0f];
     [closeBtn setTitle:@"取消" forState:UIControlStateNormal];
     [closeBtn setTitleColor:HEXColor(0x333333) forState:UIControlStateNormal];
     [closeBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     [self.shareView addSubview:closeBtn];
-    
+    [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(topView.mas_bottom);
+        make.leading.trailing.bottom.offset(0);
+    }];
+    // 约束生效
+    [self layoutIfNeeded];
     // 设置数据
     [self setDataSourceWithTopView:topView];
 }
@@ -95,6 +106,8 @@ static CGFloat kSelfHeight = 200.0f;
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
+    // 约束生效
+    [self layoutIfNeeded];
     NSTimeInterval delay = 0.1;
     for (UIView *subView in self.shareView.subviews) {
         if ([subView isKindOfClass:[UIView class]]) {
@@ -109,25 +122,30 @@ static CGFloat kSelfHeight = 200.0f;
         }
     }
     self.alpha = 0.0f;
+    [self.shareView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.offset(0);
+    }];
     [UIView animateWithDuration:0.3f animations:^{
         self.alpha = 1.0f;
+        [self layoutIfNeeded];
 //        self.shareView.frame = CGRectMake(0, kScreenHeight - kSelfHeight, kScreenWidth, kSelfHeight);
-        [self.shareView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.bottom.right.mas_equalTo(0);
-            make.height.mas_equalTo(kSelfHeight);
-        }];
+        
     }];
 }
 
 // 关闭
 - (void)dismiss{
+    [self.shareView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.offset(kSelfHeight);
+    }];
     [UIView animateWithDuration:0.3f animations:^{
         self.alpha = 0.0f;
+        [self layoutIfNeeded];
 //        self.shareView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, kSelfHeight);
-        [self.shareView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.bottom.right.mas_equalTo(0);
-            make.height.mas_equalTo(kSelfHeight);
-        }];
+//        [self.shareView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.left.bottom.right.mas_equalTo(0);
+//            make.height.mas_equalTo(kSelfHeight);
+//        }];
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];

@@ -22,7 +22,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    PLShareView *shareView = [[PLShareView alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    PLShareView *shareView = [[PLShareView alloc] init];
     [shareView show];
     shareView.didSelectShareBtn = ^(PLShareViewItemType shareType) {
         NSLog(@"shareType == %ld",shareType);

@@ -30,15 +30,22 @@ static CGFloat kSelfHeight = 200.0f;
 - (void)setUp {
     // 背景Btn
     UIButton *bgBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    bgBtn.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight - kSelfHeight);
+//    bgBtn.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight - kSelfHeight);
     [bgBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:bgBtn];
+    [bgBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
     
     // 分享视图
     self.shareView = ({
-        UIView *shareView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenHeight, kScreenWidth, kSelfHeight)];
+        UIView *shareView = [[UIView alloc] init];
         shareView.backgroundColor = [UIColor whiteColor];
         [self addSubview:shareView];
+        [shareView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.right.mas_equalTo(0);
+            make.height.mas_equalTo(kSelfHeight);
+        }];
         shareView;
     });
     
@@ -85,6 +92,9 @@ static CGFloat kSelfHeight = 200.0f;
 - (void)show {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     [keyWindow addSubview:self];
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
     NSTimeInterval delay = 0.1;
     for (UIView *subView in self.shareView.subviews) {
         if ([subView isKindOfClass:[UIView class]]) {
@@ -101,7 +111,11 @@ static CGFloat kSelfHeight = 200.0f;
     self.alpha = 0.0f;
     [UIView animateWithDuration:0.3f animations:^{
         self.alpha = 1.0f;
-        self.shareView.frame = CGRectMake(0, kScreenHeight - kSelfHeight, kScreenWidth, kSelfHeight);
+//        self.shareView.frame = CGRectMake(0, kScreenHeight - kSelfHeight, kScreenWidth, kSelfHeight);
+        [self.shareView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.right.mas_equalTo(0);
+            make.height.mas_equalTo(kSelfHeight);
+        }];
     }];
 }
 
@@ -109,7 +123,11 @@ static CGFloat kSelfHeight = 200.0f;
 - (void)dismiss{
     [UIView animateWithDuration:0.3f animations:^{
         self.alpha = 0.0f;
-        self.shareView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, kSelfHeight);
+//        self.shareView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, kSelfHeight);
+        [self.shareView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.right.mas_equalTo(0);
+            make.height.mas_equalTo(kSelfHeight);
+        }];
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];

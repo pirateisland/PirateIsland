@@ -20,6 +20,11 @@
     self.navigationItem.title = @"HANLIN";
     NSLog(@"this is mine");
     NSLog(@"%@",self.navigationController);
+    self.view.backgroundColor = [UIColor colorWithHexString:HLChartLineColorStr];
+    
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    self.view.backgroundColor = HLRandomColor;
+    [self.navigationController pushViewController:[[HHRouter shared ] matchController:M_PLHLSecViewController] animated:YES];
+}
 @end

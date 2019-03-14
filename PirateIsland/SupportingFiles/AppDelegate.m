@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PLTabBarController.h"
 #import "PLNavigationViewController.h"
+#import "PLHHRouterMap.h"
 
 @interface AppDelegate () <UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
@@ -24,6 +25,7 @@
     tabbarController.delegate = self;
     self.window.rootViewController = [[PLNavigationViewController alloc] initWithRootViewControllerNoWrapping:tabbarController];
     [self.window makeKeyAndVisible];
+    [[PLHHRouterMap shared] registeredMap];
     return YES;
 }
 

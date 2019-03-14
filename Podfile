@@ -12,5 +12,6 @@ pod 'RTRootNavigationController'
 pod 'CYLTabBarController'
 pod 'Masonry',:git =>'https://github.com/pingwinator/Masonry.git'
 pod 'YYKit'
+pod 'HHRouter', '~> 0.1.8'
 
 end

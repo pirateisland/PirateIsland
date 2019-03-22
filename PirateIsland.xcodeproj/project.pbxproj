@@ -157,6 +157,7 @@
 		2C4814FE22313CE000D57D9C /* HLUnit */ = {
 			isa = PBXGroup;
 			children = (
+				AE7F921B2244E61600B6FF02 /* internationaLization */,
 				AE04340C2244CF3D009F2119 /* HLHeatMap */,
 				2C4814FF22313D0600D57D9C /* PLHanLinViewController.h */,
 				2C48150022313D0600D57D9C /* PLHanLinViewController.m */,
@@ -192,6 +193,13 @@
 				4DB5D5EAE2599975C559EA1F /* Pods-PirateIsland.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE7F921B2244E61600B6FF02 /* internationaLization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = internationaLization;
 			sourceTree = "<group>";
 		};
 		AE94705D223A5329008C472A /* PLHHRouterSupportingFiles */ = {

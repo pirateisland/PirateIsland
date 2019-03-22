@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"热力图";
     self.view.backgroundColor = [UIColor colorWithHexString:HLChartLineColorStr];
     [self creatUI];
 }

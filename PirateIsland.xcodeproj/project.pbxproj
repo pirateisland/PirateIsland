@@ -22,6 +22,8 @@
 		2C48150122313D0600D57D9C /* PLHanLinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48150022313D0600D57D9C /* PLHanLinViewController.m */; };
 		7C25E33A7EF24C8CAA397FFC /* Pods_PirateIsland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */; };
 		AE04340F2244CFB2009F2119 /* HLHeatMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE04340E2244CFB2009F2119 /* HLHeatMapVC.m */; };
+		AE0434122244D56D009F2119 /* UIImage+HeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0434102244D56C009F2119 /* UIImage+HeatMap.m */; };
+		AE0434152244DB00009F2119 /* PLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0434142244DB00009F2119 /* PLTool.m */; };
 		AE94705C223A523F008C472A /* PLHLSecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705B223A523F008C472A /* PLHLSecViewController.m */; };
 		AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705F223A5402008C472A /* PLHHRouterMap.m */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
@@ -60,6 +62,10 @@
 		9660252AEE6ADE333289619C /* Pods-PirateIsland.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateIsland.debug.xcconfig"; path = "Target Support Files/Pods-PirateIsland/Pods-PirateIsland.debug.xcconfig"; sourceTree = "<group>"; };
 		AE04340D2244CFB2009F2119 /* HLHeatMapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLHeatMapVC.h; sourceTree = "<group>"; };
 		AE04340E2244CFB2009F2119 /* HLHeatMapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLHeatMapVC.m; sourceTree = "<group>"; };
+		AE0434102244D56C009F2119 /* UIImage+HeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HeatMap.m"; sourceTree = "<group>"; };
+		AE0434112244D56D009F2119 /* UIImage+HeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HeatMap.h"; sourceTree = "<group>"; };
+		AE0434132244DB00009F2119 /* PLTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLTool.h; sourceTree = "<group>"; };
+		AE0434142244DB00009F2119 /* PLTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLTool.m; sourceTree = "<group>"; };
 		AE947059223A4F37008C472A /* HLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLHeader.h; sourceTree = "<group>"; };
 		AE94705A223A523F008C472A /* PLHLSecViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHLSecViewController.h; sourceTree = "<group>"; };
 		AE94705B223A523F008C472A /* PLHLSecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHLSecViewController.m; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 			children = (
 				2C4814EF2231344B00D57D9C /* PrefixHeader.pch */,
 				AE947059223A4F37008C472A /* HLHeader.h */,
+				AE0434132244DB00009F2119 /* PLTool.h */,
+				AE0434142244DB00009F2119 /* PLTool.m */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -171,6 +179,8 @@
 			children = (
 				AE04340D2244CFB2009F2119 /* HLHeatMapVC.h */,
 				AE04340E2244CFB2009F2119 /* HLHeatMapVC.m */,
+				AE0434112244D56D009F2119 /* UIImage+HeatMap.h */,
+				AE0434102244D56C009F2119 /* UIImage+HeatMap.m */,
 			);
 			path = HLHeatMap;
 			sourceTree = "<group>";
@@ -368,10 +378,12 @@
 				2C17667022326B6000269E64 /* PLYanaShareVC.m in Sources */,
 				AE94705C223A523F008C472A /* PLHLSecViewController.m in Sources */,
 				2C1766762232742500269E64 /* PLShareButton.m in Sources */,
+				AE0434122244D56D009F2119 /* UIImage+HeatMap.m in Sources */,
 				2C4814EC223133BD00D57D9C /* main.m in Sources */,
 				2C4814F72231396E00D57D9C /* PLBaseViewController.m in Sources */,
 				2C1766732232717100269E64 /* PLShareView.m in Sources */,
 				2C17666D223266E800269E64 /* UINavigationBar+Awesome.m in Sources */,
+				AE0434152244DB00009F2119 /* PLTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -119,4 +119,12 @@
 /**开启侧滑返回手势-包括后面的栈。*/
 #define HLPopLastViewController self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 
+
+///=============================================================================
+/// @name 跳转相关
+///=============================================================================
+#define HLGetVC(VC宏) [[HHRouter shared ] matchController:VC宏]
+
+
+
 #endif /* HLHeader_h */

@@ -8,6 +8,7 @@
 
 #import "PLHHRouterMap.h"
 #import "PLHLSecViewController.h"
+#import "HLHeatMapVC.h"
 
 @implementation PLHHRouterMap
 + (instancetype)shared
@@ -25,5 +26,6 @@
 }
 -(void)registeredMap{
     [[HHRouter shared] map:M_PLHLSecViewController toControllerClass:[PLHLSecViewController class]];
+    [[HHRouter shared] map:M_HLHeatMapVC toControllerClass:[HLHeatMapVC class]];
 }
 @end

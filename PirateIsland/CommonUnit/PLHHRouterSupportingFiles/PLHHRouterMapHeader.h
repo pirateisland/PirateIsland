@@ -10,5 +10,6 @@
 #define PLHHRouterMapHeader_h
 
 #define M_PLHLSecViewController @"PLHLSecViewController"
+#define M_HLHeatMapVC @"HLHeatMapVC"//热力图
 
 #endif /* PLHHRouterMapHeader_h */

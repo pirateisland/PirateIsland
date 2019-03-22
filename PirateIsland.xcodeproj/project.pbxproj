@@ -21,6 +21,7 @@
 		2C4814FD22313B7B00D57D9C /* PLYanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814FC22313B7B00D57D9C /* PLYanaViewController.m */; };
 		2C48150122313D0600D57D9C /* PLHanLinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48150022313D0600D57D9C /* PLHanLinViewController.m */; };
 		7C25E33A7EF24C8CAA397FFC /* Pods_PirateIsland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */; };
+		AE04340F2244CFB2009F2119 /* HLHeatMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE04340E2244CFB2009F2119 /* HLHeatMapVC.m */; };
 		AE94705C223A523F008C472A /* PLHLSecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705B223A523F008C472A /* PLHLSecViewController.m */; };
 		AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705F223A5402008C472A /* PLHHRouterMap.m */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
@@ -57,6 +58,8 @@
 		2C48150022313D0600D57D9C /* PLHanLinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHanLinViewController.m; sourceTree = "<group>"; };
 		4DB5D5EAE2599975C559EA1F /* Pods-PirateIsland.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateIsland.release.xcconfig"; path = "Target Support Files/Pods-PirateIsland/Pods-PirateIsland.release.xcconfig"; sourceTree = "<group>"; };
 		9660252AEE6ADE333289619C /* Pods-PirateIsland.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateIsland.debug.xcconfig"; path = "Target Support Files/Pods-PirateIsland/Pods-PirateIsland.debug.xcconfig"; sourceTree = "<group>"; };
+		AE04340D2244CFB2009F2119 /* HLHeatMapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLHeatMapVC.h; sourceTree = "<group>"; };
+		AE04340E2244CFB2009F2119 /* HLHeatMapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLHeatMapVC.m; sourceTree = "<group>"; };
 		AE947059223A4F37008C472A /* HLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLHeader.h; sourceTree = "<group>"; };
 		AE94705A223A523F008C472A /* PLHLSecViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHLSecViewController.h; sourceTree = "<group>"; };
 		AE94705B223A523F008C472A /* PLHLSecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHLSecViewController.m; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 		2C4814FE22313CE000D57D9C /* HLUnit */ = {
 			isa = PBXGroup;
 			children = (
+				AE04340C2244CF3D009F2119 /* HLHeatMap */,
 				2C4814FF22313D0600D57D9C /* PLHanLinViewController.h */,
 				2C48150022313D0600D57D9C /* PLHanLinViewController.m */,
 				AE94705A223A523F008C472A /* PLHLSecViewController.h */,
@@ -160,6 +164,15 @@
 				D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE04340C2244CF3D009F2119 /* HLHeatMap */ = {
+			isa = PBXGroup;
+			children = (
+				AE04340D2244CFB2009F2119 /* HLHeatMapVC.h */,
+				AE04340E2244CFB2009F2119 /* HLHeatMapVC.m */,
+			);
+			path = HLHeatMap;
 			sourceTree = "<group>";
 		};
 		AE1A4E2062B0A0EAA6FDF294 /* Pods */ = {
@@ -348,6 +361,7 @@
 				2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */,
 				2C4814FD22313B7B00D57D9C /* PLYanaViewController.m in Sources */,
 				2C4814FA223139F400D57D9C /* PLNavigationViewController.m in Sources */,
+				AE04340F2244CFB2009F2119 /* HLHeatMapVC.m in Sources */,
 				2C17666A22325B7100269E64 /* PLCollectionViewCell.m in Sources */,
 				AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */,
 				2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */,

@@ -44,13 +44,13 @@
     NSMutableArray * points = [NSMutableArray array];
     NSMutableArray * weights = [NSMutableArray array];
 
-    for (NSInteger i = 0; i < 1000; i ++) {
-        float X = [PLTool getRandomNumber:0 to:HLScreenWidth];
-        float Y = [PLTool getRandomNumber:0 to:HLScreenWidth];
+    for (NSInteger i = 0; i < 300; i ++) {
+        float X = [PLTool getRandomNumber:20 to:(HLScreenWidth-350)];
+        float Y = [PLTool getRandomNumber:20 to:200];
         [points addObject:[NSValue valueWithCGPoint:CGPointMake(X, Y)]];
-        [weights addObject:[NSNumber numberWithInteger:[PLTool getRandomNumber:0 to:100]*100]];
+        [weights addObject:[NSNumber numberWithInteger:[PLTool getRandomNumber:0 to:5]]];
     }
-    self.heatMap.image = [UIImage heatMapWithRect:self.stadium.bounds boost:0.5 points:points weights:weights weightsAdjustmentEnabled:YES groupingEnabled:YES];
+    self.heatMap.image = [UIImage heatMapWithRect:self.stadium.bounds boost:0.5 points:points weights:weights weightsAdjustmentEnabled:NO groupingEnabled:NO];
     
     
 }

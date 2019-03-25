@@ -69,6 +69,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         [self.rt_navigationController pushViewController:HLGetVC(M_HLHeatMapVC) animated:YES complete:nil];
+    }else if (indexPath.row == 1){
+        [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsVC) animated:YES complete:nil];
     }
 }
 

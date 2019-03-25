@@ -29,8 +29,7 @@
     [self.view addSubview:self.stadium];
     self.stadium.contentMode = UIViewContentModeScaleAspectFit;
     [self.stadium mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(64);
-        make.left.right.mas_equalTo(0);
+        make.top.left.right.mas_equalTo(0);
         make.height.mas_equalTo(HLScreenWidth*0.7);
     }];
     
@@ -45,13 +44,13 @@
     NSMutableArray * points = [NSMutableArray array];
     NSMutableArray * weights = [NSMutableArray array];
 
-    for (NSInteger i = 0; i < 500; i ++) {
-        float X = [PLTool getRandomNumber:0 to:HLScreenWidth*0.7];
-        float Y = [PLTool getRandomNumber:0 to:HLScreenWidth*0.7];
+    for (NSInteger i = 0; i < 300; i ++) {
+        float X = [PLTool getRandomNumber:20 to:(HLScreenWidth-350)];
+        float Y = [PLTool getRandomNumber:20 to:200];
         [points addObject:[NSValue valueWithCGPoint:CGPointMake(X, Y)]];
-        [weights addObject:[NSNumber numberWithInteger:[PLTool getRandomNumber:0 to:100]*100]];
+        [weights addObject:[NSNumber numberWithInteger:[PLTool getRandomNumber:0 to:5]]];
     }
-    self.heatMap.image = [UIImage heatMapWithRect:self.stadium.bounds boost:0.5 points:points weights:weights weightsAdjustmentEnabled:YES groupingEnabled:YES];
+    self.heatMap.image = [UIImage heatMapWithRect:self.stadium.bounds boost:0.5 points:points weights:weights weightsAdjustmentEnabled:NO groupingEnabled:NO];
     
     
 }

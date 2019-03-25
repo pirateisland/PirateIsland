@@ -29,7 +29,8 @@
     [self.view addSubview:self.stadium];
     self.stadium.contentMode = UIViewContentModeScaleAspectFit;
     [self.stadium mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.mas_equalTo(0);
+        make.top.mas_equalTo(64);
+        make.left.right.mas_equalTo(0);
         make.height.mas_equalTo(HLScreenWidth*0.7);
     }];
     
@@ -44,9 +45,9 @@
     NSMutableArray * points = [NSMutableArray array];
     NSMutableArray * weights = [NSMutableArray array];
 
-    for (NSInteger i = 0; i < 1000; i ++) {
-        float X = [PLTool getRandomNumber:0 to:HLScreenWidth];
-        float Y = [PLTool getRandomNumber:0 to:HLScreenWidth];
+    for (NSInteger i = 0; i < 500; i ++) {
+        float X = [PLTool getRandomNumber:0 to:HLScreenWidth*0.7];
+        float Y = [PLTool getRandomNumber:0 to:HLScreenWidth*0.7];
         [points addObject:[NSValue valueWithCGPoint:CGPointMake(X, Y)]];
         [weights addObject:[NSNumber numberWithInteger:[PLTool getRandomNumber:0 to:100]*100]];
     }

@@ -60,6 +60,9 @@
 		AE7F929B2248DDEA00B6FF02 /* HLXAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F92992248DDEA00B6FF02 /* HLXAxis.m */; };
 		AE7F929C2248DDEA00B6FF02 /* HLYAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F929A2248DDEA00B6FF02 /* HLYAxis.m */; };
 		AE7F929F2248DE4600B6FF02 /* HLChartsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F929E2248DE4500B6FF02 /* HLChartsVC.m */; };
+		AE7F92A62249B28100B6FF02 /* HLBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F92A22249B28000B6FF02 /* HLBundle.m */; };
+		AE7F92A82249B2E200B6FF02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE7F92AA2249B2E200B6FF02 /* InfoPlist.strings */; };
+		AE7F92AC2249B2EA00B6FF02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE7F92AE2249B2EA00B6FF02 /* Localizable.strings */; };
 		AE94705C223A523F008C472A /* PLHLSecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705B223A523F008C472A /* PLHLSecViewController.m */; };
 		AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705F223A5402008C472A /* PLHHRouterMap.m */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
@@ -175,6 +178,13 @@
 		AE7F929A2248DDEA00B6FF02 /* HLYAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAxis.m; sourceTree = "<group>"; };
 		AE7F929D2248DE4500B6FF02 /* HLChartsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLChartsVC.h; sourceTree = "<group>"; };
 		AE7F929E2248DE4500B6FF02 /* HLChartsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLChartsVC.m; sourceTree = "<group>"; };
+		AE7F92A22249B28000B6FF02 /* HLBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLBundle.m; sourceTree = "<group>"; };
+		AE7F92A32249B28100B6FF02 /* HLBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLBundle.h; sourceTree = "<group>"; };
+		AE7F92A72249B2D700B6FF02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		AE7F92A92249B2E200B6FF02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE7F92AB2249B2E400B6FF02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		AE7F92AD2249B2EA00B6FF02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE7F92AF2249B2F000B6FF02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AE947059223A4F37008C472A /* HLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLHeader.h; sourceTree = "<group>"; };
 		AE94705A223A523F008C472A /* PLHLSecViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHLSecViewController.h; sourceTree = "<group>"; };
 		AE94705B223A523F008C472A /* PLHLSecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHLSecViewController.m; sourceTree = "<group>"; };
@@ -301,6 +311,10 @@
 		AE7F921B2244E61600B6FF02 /* internationaLization */ = {
 			isa = PBXGroup;
 			children = (
+				AE7F92A32249B28100B6FF02 /* HLBundle.h */,
+				AE7F92A22249B28000B6FF02 /* HLBundle.m */,
+				AE7F92AA2249B2E200B6FF02 /* InfoPlist.strings */,
+				AE7F92AE2249B2EA00B6FF02 /* Localizable.strings */,
 			);
 			path = internationaLization;
 			sourceTree = "<group>";
@@ -503,6 +517,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = AEF183332230F9D800121D93;
 			productRefGroup = AEF1833D2230F9D800121D93 /* Products */;
@@ -519,7 +534,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7F92AC2249B2EA00B6FF02 /* Localizable.strings in Resources */,
 				AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */,
+				AE7F92A82249B2E200B6FF02 /* InfoPlist.strings in Resources */,
 				AE7F92632248D9BA00B6FF02 /* AAJSFiles.bundle in Resources */,
 				AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */,
 			);
@@ -606,6 +623,7 @@
 				AE7F926D2248D9BA00B6FF02 /* AASubtitle.m in Sources */,
 				AE04340F2244CFB2009F2119 /* HLHeatMapVC.m in Sources */,
 				2C17666A22325B7100269E64 /* PLCollectionViewCell.m in Sources */,
+				AE7F92A62249B28100B6FF02 /* HLBundle.m in Sources */,
 				AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */,
 				AE7F929B2248DDEA00B6FF02 /* HLXAxis.m in Sources */,
 				AE7F927F2248D9BA00B6FF02 /* AAChartModel.m in Sources */,
@@ -648,10 +666,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AE7F92AA2249B2E200B6FF02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE7F92A92249B2E200B6FF02 /* en */,
+				AE7F92AB2249B2E400B6FF02 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE7F92AE2249B2EA00B6FF02 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE7F92AD2249B2EA00B6FF02 /* en */,
+				AE7F92AF2249B2F000B6FF02 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AEF1834B2230F9DA00121D93 /* Base */,
+				AE7F92A72249B2D700B6FF02 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -663,6 +700,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -722,6 +760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -8,21 +8,62 @@
 
 #import "HLChartsVC.h"
 
-@interface HLChartsVC ()
-
+@interface HLChartsVC ()<UITableViewDelegate,UITableViewDataSource>
+/**主体tab*/
+@property (nonatomic,strong) UITableView * mainTableView;
+/**数据*/
+@property (nonatomic,strong) NSArray * dataArray;
 @end
 
 @implementation HLChartsVC
-
+#pragma mark - lazy load
+- (UITableView *)mainTableView{
+    if (!_mainTableView) {
+        _mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+    }
+    return _mainTableView;
+}
+#pragma mark - 初始化
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"图表";
-    self.view.backgroundColor = HLRandomColor;
+    self.dataArray = @[@"雷达图",@"环形图",@"热力图"];
+    [self creatUI];
 }
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    self.view.backgroundColor = HLRandomColor;
+
+- (void)creatUI{
+    
+    [self.view addSubview:self.mainTableView];
+    self.mainTableView.delegate = self;
+    self.mainTableView.dataSource  =self;
+    self.mainTableView.tableFooterView = [UIView new];
+    [self.mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+    
+    
+    
+    
+    
 }
+
+#pragma mark - UITableViewDelegate,UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    return cell;
+}
+
 /*
 #pragma mark - Navigation
 

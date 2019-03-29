@@ -10,6 +10,8 @@
 #import "PLHLSecViewController.h"
 #import "HLHeatMapVC.h"
 #import "HLChartsVC.h"
+#import "HLChartsPieVC.h"
+#import "HLChartsColumnVC.h"
 
 @implementation PLHHRouterMap
 + (instancetype)shared
@@ -29,5 +31,7 @@
     [[HHRouter shared] map:M_PLHLSecViewController toControllerClass:[PLHLSecViewController class]];
     [[HHRouter shared] map:M_HLHeatMapVC toControllerClass:[HLHeatMapVC class]];//热力图
     [[HHRouter shared] map:M_HLChartsVC toControllerClass:[HLChartsVC class]];//图表
+    [[HHRouter shared] map:M_HLChartsPieVC toControllerClass:[HLChartsPieVC class]];//饼状图
+    [[HHRouter shared] map:M_HLChartsColumnVC toControllerClass:[HLChartsColumnVC class]];//雷达图
 }
 @end

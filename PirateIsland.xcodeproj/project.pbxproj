@@ -24,6 +24,8 @@
 		AE04340F2244CFB2009F2119 /* HLHeatMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE04340E2244CFB2009F2119 /* HLHeatMapVC.m */; };
 		AE0434122244D56D009F2119 /* UIImage+HeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0434102244D56C009F2119 /* UIImage+HeatMap.m */; };
 		AE0434152244DB00009F2119 /* PLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0434142244DB00009F2119 /* PLTool.m */; };
+		AE286C18224DF9E100CE2EF0 /* HLChartsPieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C17224DF9E100CE2EF0 /* HLChartsPieVC.m */; };
+		AE286C1B224E258200CE2EF0 /* HLChartsColumnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C1A224E258200CE2EF0 /* HLChartsColumnVC.m */; };
 		AE7F92632248D9BA00B6FF02 /* AAJSFiles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE7F921E2248D9BA00B6FF02 /* AAJSFiles.bundle */; };
 		AE7F92642248D9BA00B6FF02 /* AAAreaspline.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F92212248D9BA00B6FF02 /* AAAreaspline.m */; };
 		AE7F92652248D9BA00B6FF02 /* AALabels.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F92232248D9BA00B6FF02 /* AALabels.m */; };
@@ -105,6 +107,10 @@
 		AE0434112244D56D009F2119 /* UIImage+HeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HeatMap.h"; sourceTree = "<group>"; };
 		AE0434132244DB00009F2119 /* PLTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLTool.h; sourceTree = "<group>"; };
 		AE0434142244DB00009F2119 /* PLTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLTool.m; sourceTree = "<group>"; };
+		AE286C16224DF9E100CE2EF0 /* HLChartsPieVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLChartsPieVC.h; sourceTree = "<group>"; };
+		AE286C17224DF9E100CE2EF0 /* HLChartsPieVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLChartsPieVC.m; sourceTree = "<group>"; };
+		AE286C19224E258200CE2EF0 /* HLChartsColumnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLChartsColumnVC.h; sourceTree = "<group>"; };
+		AE286C1A224E258200CE2EF0 /* HLChartsColumnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLChartsColumnVC.m; sourceTree = "<group>"; };
 		AE7F921E2248D9BA00B6FF02 /* AAJSFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AAJSFiles.bundle; sourceTree = "<group>"; };
 		AE7F92202248D9BA00B6FF02 /* AAArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAArea.h; sourceTree = "<group>"; };
 		AE7F92212248D9BA00B6FF02 /* AAAreaspline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAreaspline.m; sourceTree = "<group>"; };
@@ -426,6 +432,10 @@
 				AE7F929A2248DDEA00B6FF02 /* HLYAxis.m */,
 				AE7F929D2248DE4500B6FF02 /* HLChartsVC.h */,
 				AE7F929E2248DE4500B6FF02 /* HLChartsVC.m */,
+				AE286C16224DF9E100CE2EF0 /* HLChartsPieVC.h */,
+				AE286C17224DF9E100CE2EF0 /* HLChartsPieVC.m */,
+				AE286C19224E258200CE2EF0 /* HLChartsColumnVC.h */,
+				AE286C1A224E258200CE2EF0 /* HLChartsColumnVC.m */,
 			);
 			path = HLCharts;
 			sourceTree = "<group>";
@@ -637,11 +647,13 @@
 				AE7F92802248D9BA00B6FF02 /* AAOptions.m in Sources */,
 				AE7F926A2248D9BA00B6FF02 /* AAPlotBandsElement.m in Sources */,
 				2C1766762232742500269E64 /* PLShareButton.m in Sources */,
+				AE286C18224DF9E100CE2EF0 /* HLChartsPieVC.m in Sources */,
 				AE7F929C2248DDEA00B6FF02 /* HLYAxis.m in Sources */,
 				AE7F926B2248D9BA00B6FF02 /* AALine.m in Sources */,
 				AE7F92712248D9BA00B6FF02 /* AAPlotLinesElement.m in Sources */,
 				AE0434122244D56D009F2119 /* UIImage+HeatMap.m in Sources */,
 				2C4814EC223133BD00D57D9C /* main.m in Sources */,
+				AE286C1B224E258200CE2EF0 /* HLChartsColumnVC.m in Sources */,
 				2C4814F72231396E00D57D9C /* PLBaseViewController.m in Sources */,
 				2C1766732232717100269E64 /* PLShareView.m in Sources */,
 				AE7F92812248D9BA00B6FF02 /* AASeriesElement.m in Sources */,

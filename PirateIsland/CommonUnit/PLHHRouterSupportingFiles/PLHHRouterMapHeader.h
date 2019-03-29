@@ -12,5 +12,7 @@
 #define M_PLHLSecViewController @"PLHLSecViewController"
 #define M_HLHeatMapVC @"HLHeatMapVC"//热力图
 #define M_HLChartsVC @"HLChartsVC"//图表
+#define M_HLChartsPieVC @"HLChartsPieVC"//饼状图
+#define M_HLChartsColumnVC @"HLChartsColumnVC"//雷达图
 
 #endif /* PLHHRouterMapHeader_h */

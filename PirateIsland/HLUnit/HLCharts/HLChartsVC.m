@@ -28,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"图表";
-    self.dataArray = @[@"雷达图",@"环形图",@"热力图"];
+    self.dataArray = @[@"雷达图",@"饼状图",@"热力图"];
     [self creatUI];
 }
 
@@ -62,6 +62,15 @@
     }
     cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {//雷达图
+        [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsColumnVC) animated:YES complete:nil];
+    }else if (indexPath.row == 1){//饼状图
+        [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsPieVC) animated:YES complete:nil];
+    }else if (indexPath.row == 2){//热力图
+        [self.rt_navigationController pushViewController:HLGetVC(M_HLHeatMapVC) animated:YES complete:nil];
+    }
 }
 
 /*

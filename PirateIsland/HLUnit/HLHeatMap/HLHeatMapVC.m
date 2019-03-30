@@ -46,7 +46,7 @@
     NSMutableArray * weights = [NSMutableArray array];
 
     for (NSInteger i = 0; i < 300; i ++) {
-        float X = [PLTool getRandomNumber:20 to:(HLScreenWidth)];
+        float X = [PLTool getRandomNumber:20 to:(HLScreenWidth )];
         float Y = [PLTool getRandomNumber:20 to:(HLScreenWidth*0.5)];
         [points addObject:[NSValue valueWithCGPoint:CGPointMake(X, Y)]];
         [weights addObject:[NSNumber numberWithInteger:[PLTool getRandomNumber:0 to:5]]];

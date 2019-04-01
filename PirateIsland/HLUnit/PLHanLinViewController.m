@@ -31,9 +31,9 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"是翰林啊";
+    self.navigationItem.title = HLLanguage(@"是翰林啊");
     self.navigationItem.titleView.backgroundColor = HLRandomColor;
-    self.dataArray = @[@"热力图",@"图表",@"国际化",@"地图"];
+    self.dataArray = @[@"图表",@"国际化",@"地图"];
     [self creatUI];
     self.view.backgroundColor = [UIColor colorWithHexString:HLChartLineColorStr];
 }
@@ -67,10 +67,10 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0) {
-        [self.rt_navigationController pushViewController:HLGetVC(M_HLHeatMapVC) animated:YES complete:nil];
-    }else if (indexPath.row == 1){
+    if (indexPath.row == 0){
         [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsVC) animated:YES complete:nil];
+    }else if (indexPath.row == 1){
+        [self.rt_navigationController pushViewController:HLGetVC(M_HLInternationaLizationVC) animated:YES complete:nil];
     }
 }
 

@@ -26,6 +26,10 @@
 		AE0434152244DB00009F2119 /* PLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0434142244DB00009F2119 /* PLTool.m */; };
 		AE286C18224DF9E100CE2EF0 /* HLChartsPieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C17224DF9E100CE2EF0 /* HLChartsPieVC.m */; };
 		AE286C1B224E258200CE2EF0 /* HLChartsColumnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C1A224E258200CE2EF0 /* HLChartsColumnVC.m */; };
+		AE286C1E2251FAE300CE2EF0 /* HLChartsScatterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C1D2251FAE300CE2EF0 /* HLChartsScatterVC.m */; };
+		AE286C212252041600CE2EF0 /* HLChartsColumnrangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C202252041600CE2EF0 /* HLChartsColumnrangeVC.m */; };
+		AE286C242252096500CE2EF0 /* HLInternationaLizationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C232252096500CE2EF0 /* HLInternationaLizationVC.m */; };
+		AE286C27225212C400CE2EF0 /* HLInternationaLizationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE286C26225212C400CE2EF0 /* HLInternationaLizationCell.m */; };
 		AE7F92632248D9BA00B6FF02 /* AAJSFiles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE7F921E2248D9BA00B6FF02 /* AAJSFiles.bundle */; };
 		AE7F92642248D9BA00B6FF02 /* AAAreaspline.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F92212248D9BA00B6FF02 /* AAAreaspline.m */; };
 		AE7F92652248D9BA00B6FF02 /* AALabels.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7F92232248D9BA00B6FF02 /* AALabels.m */; };
@@ -111,6 +115,14 @@
 		AE286C17224DF9E100CE2EF0 /* HLChartsPieVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLChartsPieVC.m; sourceTree = "<group>"; };
 		AE286C19224E258200CE2EF0 /* HLChartsColumnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLChartsColumnVC.h; sourceTree = "<group>"; };
 		AE286C1A224E258200CE2EF0 /* HLChartsColumnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLChartsColumnVC.m; sourceTree = "<group>"; };
+		AE286C1C2251FAE300CE2EF0 /* HLChartsScatterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLChartsScatterVC.h; sourceTree = "<group>"; };
+		AE286C1D2251FAE300CE2EF0 /* HLChartsScatterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLChartsScatterVC.m; sourceTree = "<group>"; };
+		AE286C1F2252041600CE2EF0 /* HLChartsColumnrangeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLChartsColumnrangeVC.h; sourceTree = "<group>"; };
+		AE286C202252041600CE2EF0 /* HLChartsColumnrangeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLChartsColumnrangeVC.m; sourceTree = "<group>"; };
+		AE286C222252096500CE2EF0 /* HLInternationaLizationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLInternationaLizationVC.h; sourceTree = "<group>"; };
+		AE286C232252096500CE2EF0 /* HLInternationaLizationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLInternationaLizationVC.m; sourceTree = "<group>"; };
+		AE286C25225212C400CE2EF0 /* HLInternationaLizationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLInternationaLizationCell.h; sourceTree = "<group>"; };
+		AE286C26225212C400CE2EF0 /* HLInternationaLizationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLInternationaLizationCell.m; sourceTree = "<group>"; };
 		AE7F921E2248D9BA00B6FF02 /* AAJSFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AAJSFiles.bundle; sourceTree = "<group>"; };
 		AE7F92202248D9BA00B6FF02 /* AAArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAArea.h; sourceTree = "<group>"; };
 		AE7F92212248D9BA00B6FF02 /* AAAreaspline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAreaspline.m; sourceTree = "<group>"; };
@@ -321,6 +333,10 @@
 				AE7F92A22249B28000B6FF02 /* HLBundle.m */,
 				AE7F92AA2249B2E200B6FF02 /* InfoPlist.strings */,
 				AE7F92AE2249B2EA00B6FF02 /* Localizable.strings */,
+				AE286C222252096500CE2EF0 /* HLInternationaLizationVC.h */,
+				AE286C232252096500CE2EF0 /* HLInternationaLizationVC.m */,
+				AE286C25225212C400CE2EF0 /* HLInternationaLizationCell.h */,
+				AE286C26225212C400CE2EF0 /* HLInternationaLizationCell.m */,
 			);
 			path = internationaLization;
 			sourceTree = "<group>";
@@ -436,6 +452,10 @@
 				AE286C17224DF9E100CE2EF0 /* HLChartsPieVC.m */,
 				AE286C19224E258200CE2EF0 /* HLChartsColumnVC.h */,
 				AE286C1A224E258200CE2EF0 /* HLChartsColumnVC.m */,
+				AE286C1C2251FAE300CE2EF0 /* HLChartsScatterVC.h */,
+				AE286C1D2251FAE300CE2EF0 /* HLChartsScatterVC.m */,
+				AE286C1F2252041600CE2EF0 /* HLChartsColumnrangeVC.h */,
+				AE286C202252041600CE2EF0 /* HLChartsColumnrangeVC.m */,
 			);
 			path = HLCharts;
 			sourceTree = "<group>";
@@ -569,6 +589,7 @@
 				"${BUILT_PRODUCTS_DIR}/HHRouter/HHRouter.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -580,6 +601,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHRouter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +649,7 @@
 				2C4814FD22313B7B00D57D9C /* PLYanaViewController.m in Sources */,
 				AE7F92752248D9BA00B6FF02 /* AAArea.m in Sources */,
 				2C4814FA223139F400D57D9C /* PLNavigationViewController.m in Sources */,
+				AE286C242252096500CE2EF0 /* HLInternationaLizationVC.m in Sources */,
 				AE7F92722248D9BA00B6FF02 /* AAStyle.m in Sources */,
 				AE7F92642248D9BA00B6FF02 /* AAAreaspline.m in Sources */,
 				AE7F926C2248D9BA00B6FF02 /* AATooltip.m in Sources */,
@@ -637,8 +660,10 @@
 				AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */,
 				AE7F929B2248DDEA00B6FF02 /* HLXAxis.m in Sources */,
 				AE7F927F2248D9BA00B6FF02 /* AAChartModel.m in Sources */,
+				AE286C212252041600CE2EF0 /* HLChartsColumnrangeVC.m in Sources */,
 				AE7F927B2248D9BA00B6FF02 /* AAItemStyle.m in Sources */,
 				2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */,
+				AE286C27225212C400CE2EF0 /* HLInternationaLizationCell.m in Sources */,
 				AE7F92672248D9BA00B6FF02 /* AAXAxis.m in Sources */,
 				2C17667022326B6000269E64 /* PLYanaShareVC.m in Sources */,
 				AE94705C223A523F008C472A /* PLHLSecViewController.m in Sources */,
@@ -654,6 +679,7 @@
 				AE0434122244D56D009F2119 /* UIImage+HeatMap.m in Sources */,
 				2C4814EC223133BD00D57D9C /* main.m in Sources */,
 				AE286C1B224E258200CE2EF0 /* HLChartsColumnVC.m in Sources */,
+				AE286C1E2251FAE300CE2EF0 /* HLChartsScatterVC.m in Sources */,
 				2C4814F72231396E00D57D9C /* PLBaseViewController.m in Sources */,
 				2C1766732232717100269E64 /* PLShareView.m in Sources */,
 				AE7F92812248D9BA00B6FF02 /* AASeriesElement.m in Sources */,

@@ -13,5 +13,6 @@ pod 'CYLTabBarController'
 pod 'Masonry',:git =>'https://github.com/pingwinator/Masonry.git'
 pod 'YYKit'
 pod 'HHRouter', '~> 0.1.8'
+pod 'Toast', '~> 4.0.0'
 
 end

@@ -12,6 +12,9 @@
 #import "HLChartsVC.h"
 #import "HLChartsPieVC.h"
 #import "HLChartsColumnVC.h"
+#import "HLChartsScatterVC.h"
+#import "HLChartsColumnrangeVC.h"
+#import "HLInternationaLizationVC.h"
 
 @implementation PLHHRouterMap
 + (instancetype)shared
@@ -33,5 +36,8 @@
     [[HHRouter shared] map:M_HLChartsVC toControllerClass:[HLChartsVC class]];//图表
     [[HHRouter shared] map:M_HLChartsPieVC toControllerClass:[HLChartsPieVC class]];//饼状图
     [[HHRouter shared] map:M_HLChartsColumnVC toControllerClass:[HLChartsColumnVC class]];//雷达图
+    [[HHRouter shared] map:M_HLChartsScatterVC toControllerClass:[HLChartsScatterVC class]];//散点图
+    [[HHRouter shared] map:M_HLChartsColumnrangeVC toControllerClass:[HLChartsColumnrangeVC class]];//柱形范围图
+    [[HHRouter shared] map:M_HLInternationaLizationVC toControllerClass:[HLInternationaLizationVC class]];//国际化
 }
 @end

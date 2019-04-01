@@ -6,64 +6,19 @@
   Copyright © 2019 Apple. All rights reserved.
 */
 //赛后报告-比赛球员
-"首发球员"="FirstPlayer";
-"替补球员"="SecondPlayer";
-"赛后报告"="MatcReport";
-"比赛球员"="Player";
-"赛果统计"="ResultTheStatistics";
-"阵型变化"="Shape change";
-"体能情况"="physical";
-"进攻情况"="attack";
-"防守情况"="defensive";
-"mainImage"="heartTime";
-//赛后报告-赛果统计
-"体能情况" = "physical";
-"技战术情况" = "tactics";
-"第一局" = "First Game";
-"第二局" = "Second Game";
-"第三局" = "Third Game";
-"全场" = "Full Game";
-"运动负荷" = "Exercise load";
-"运动强度" = "Exercise intensity";
-"滑动距离m" = "Distance";
-"有效滑动距离m" = "Effective slip distance/m";
-"高速滑距离m(次数)" = "High speed distance(num)";
-"冲刺滑距离m(次数)" = "Sprint distance(num)";
-"射门" = "shot";
-"射正" = "Shot right";
-"进球" = "goal";
-"控球率" = "possession";
-"传球次数" = "Number of passes";
-"传球成功率" = "Pass rate";
-"阻截" = "stop";
-"球员名" = "name";
-"上场时长" = "UP Time";
-"本场最高\n心率bmp" = "Maxi Heart\nbmp";
-"平均心率\nbmp" = "avg Heart\nbmp";
-//"运动负荷" = "";
-//"运动强度" = "";
-"最大摄氧量\nml/(kg.min)" = "Max oxygen\nml/(kg.min)";
-"能量消耗\nKcal" = "Energy\nKcal";
-"滑动距离\nm" = "distance\nm";
-"单位滑动\n距离m/min" = "avg distance\nm/min";
-"高速滑动\n距离m" = "hight speed distahce\nm";
-"冲刺滑动\n距离m" = "spint speed distahce\nm";
-"本项排行第1名" = "No. 1 in this ranking";
-"本项排行第2、3名" = "No. 2 or no. 3 in this ranking";
-"*球员名前数字表示球衣号，高速和冲刺滑距离的括号里分别表示对应次数" = "* the number in front of the player's name represents the jersey number";
-//赛后报告-阵型变化
-"进攻方向" = "Attack";
-"左" = "L";
-"中" = "M";
-"右" = "R";
-"前" = "B";
-"后" = "A";
-//设置
-"设置" = "Setting";
-"中文" = "Chinese";
-"英文" = "English";
-"切换成功" = "Switch success";
-"切换账号" = "SwitchAccount";
-"您是否确认切换账号？点击确认，您将推出登陆并进入登录页界面。" = "Are you sure you want to switch accounts? Click ok, you will launch login and enter the login page interface.";
-"取消" = "cancel";
-"确定" = "OK";
+"是翰林啊" = "是翰林啊";
+"图表" = "图表";
+"国际化" = "国际化";
+"地图" = "地图";
+"雷达图" = "雷达图";
+"饼状图" = "饼状图";
+"热力图" = "热力图";
+"散点图" = "散点图";
+"柱形范围图" = "柱形范围图";
+"温度" = "温度";
+"东京热" = "东京热";
+"柏林热" = "柏林热";
+"伦敦热" = "伦敦热";
+"纽约热" = "纽约热";
+"" = "";
+

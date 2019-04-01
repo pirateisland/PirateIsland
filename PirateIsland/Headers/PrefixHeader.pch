@@ -18,7 +18,7 @@
 #import <HHRouter/HHRouter.h>
 #import "AAGlobalMacro.h"//AAChartKit相关
 #import "AAChartKit.h"//AAChartKit相关
-
+#import <UIView+Toast.h>
 
 #import "HLHeader.h"
 #import "PLHHRouterMapHeader.h"
@@ -26,6 +26,8 @@
 #import "UIImage+HeatMap.h"
 #import "HLXAxis.h"
 #import "HLYAxis.h"
+#import "HLBundle.h"
+
 
 /** rgb颜色转换（16进制->rgb） */
 #define HEXColor(HEXValue) [UIColor colorWithRed:((float)((HEXValue & 0xFF0000) >> 16))/255.0 green:((float)((HEXValue & 0xFF00) >> 8))/255.0 blue:((float)(HEXValue & 0xFF))/255.0 alpha:1.0]

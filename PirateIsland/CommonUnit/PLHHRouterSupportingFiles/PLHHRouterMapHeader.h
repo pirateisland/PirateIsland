@@ -14,5 +14,8 @@
 #define M_HLChartsVC @"HLChartsVC"//图表
 #define M_HLChartsPieVC @"HLChartsPieVC"//饼状图
 #define M_HLChartsColumnVC @"HLChartsColumnVC"//雷达图
+#define M_HLChartsScatterVC @"HLChartsScatterVC"//散点图
+#define M_HLChartsColumnrangeVC @"HLChartsColumnrangeVC"//柱形范围图
+#define M_HLInternationaLizationVC @"HLInternationaLizationVC"//国际化
 
 #endif /* PLHHRouterMapHeader_h */

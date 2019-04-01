@@ -36,6 +36,8 @@
 #define HLColorWithHex(rgbValue)  [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 #define ssRGBHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define ssRGBHexAlpha(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
+#define HLLanguage(string)      NSLocalizedString(string, nil)
+#define LanguageKey             @"appLanguage"
 ///=============================================================================
 
 ///=============================================================================
@@ -80,6 +82,8 @@
 #define HLTabbarHeight           49.f
 // 去除上下导航栏剩余中间视图高度
 #define HLContentHeight           (kScreenHeight - kSafeAreaTopHeight - kSafeAreaBottomHeight - kTabbarHeight)
+//window
+#define HLWindow [UIApplication sharedApplication].keyWindow
 ///=============================================================================
 
 ///=============================================================================

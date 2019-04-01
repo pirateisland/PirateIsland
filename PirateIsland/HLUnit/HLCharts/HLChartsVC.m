@@ -28,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"图表";
-    self.dataArray = @[@"雷达图",@"饼状图",@"热力图"];
+    self.dataArray = @[@"雷达图",@"饼状图",@"热力图",@"散点图",@"柱形范围图"];
     [self creatUI];
 }
 
@@ -70,6 +70,10 @@
         [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsPieVC) animated:YES complete:nil];
     }else if (indexPath.row == 2){//热力图
         [self.rt_navigationController pushViewController:HLGetVC(M_HLHeatMapVC) animated:YES complete:nil];
+    }else if (indexPath.row == 3){//散点图
+        [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsScatterVC) animated:YES complete:nil];
+    }else if (indexPath.row == 4){//柱形范围图
+        [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsColumnrangeVC) animated:YES complete:nil];
     }
 }
 

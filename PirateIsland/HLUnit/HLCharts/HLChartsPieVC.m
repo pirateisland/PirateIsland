@@ -36,7 +36,7 @@
     
     options.seriesSet(@[
                         AASeriesElement.new
-                        .nameSet(@"语言热度值")
+                        .nameSet(HLLanguage(@"语言热度值"))
                         .typeSet(AAChartTypePie)
                         .innerSizeSet(@"30%")//内部圆环半径大小占比
                         .sizeSet(@350)//尺寸大小

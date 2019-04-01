@@ -31,22 +31,22 @@
 
 - (AAChartModel *)getModel{
     AAChartModel *aaChartModel= AAChartModel.new
-    .titleSet(@"城市气温指数")
-    .subtitleSet(@"虚拟数据")
-    .yAxisTitleSet(@"摄氏度")
+    .titleSet(HLLanguage(@"城市气温指数"))
+    .subtitleSet(HLLanguage(@"虚拟数据"))
+    .yAxisTitleSet(HLLanguage(@"摄氏度"))
     .invertedSet(true)
     .markerRadiusSet(@6)
     .yAxisVisibleSet(true)
     .yAxisGridLineWidthSet(@0)
     .markerSymbolStyleSet(AAChartSymbolStyleTypeBorderBlank)
     .chartTypeSet(AAChartTypeLine)
-    .categoriesSet(@[@"一月", @"二月", @"三月", @"四月", @"五月", @"六月", @"七月", @"八月", @"九月", @"十月", @"十一月", @"十二月"])
+    .categoriesSet(@[HLLanguage(@"一月"), HLLanguage(@"二月"), HLLanguage(@"三月"), HLLanguage(@"四月"), HLLanguage(@"五月"), HLLanguage(@"六月"), HLLanguage(@"七月"), HLLanguage(@"八月"), HLLanguage(@"九月"),HLLanguage( @"十月"), HLLanguage(@"十一月"), HLLanguage(@"十二月")])
     .dataLabelEnabledSet(true)
     .colorsThemeSet(@[@"#1e90ff",@"#EA007B", @"#49C1B6", @"#FDC20A", @"#F78320", @"#068E81",])
     .seriesSet(@[
                  AASeriesElement.new
                  .typeSet(AAChartTypeColumnrange)
-                 .nameSet(@"温度")
+                 .nameSet(HLLanguage(@"温度"))
                  .dataSet(@[
                             @[@(-9.7), @9.4],
                             @[@(-8.7), @6.5],

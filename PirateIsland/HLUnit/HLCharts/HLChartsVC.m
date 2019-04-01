@@ -27,8 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"图表";
-    self.dataArray = @[@"雷达图",@"饼状图",@"热力图",@"散点图",@"柱形范围图"];
+    self.navigationItem.title = HLLanguage(@"图表");
+    self.dataArray = @[HLLanguage(@"雷达图"),HLLanguage(@"饼状图"),HLLanguage(@"热力图"),HLLanguage(@"散点图"),HLLanguage(@"柱形范围图")];
     [self creatUI];
 }
 

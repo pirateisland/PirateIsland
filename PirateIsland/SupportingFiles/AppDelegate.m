@@ -26,6 +26,7 @@
     self.window.rootViewController = [[PLNavigationViewController alloc] initWithRootViewControllerNoWrapping:tabbarController];
     [self.window makeKeyAndVisible];
     [[PLHHRouterMap shared] registeredMap];
+    [HLBundle setLanguage: [[NSUserDefaults standardUserDefaults] objectForKey:LanguageKey]];
     return YES;
 }
 

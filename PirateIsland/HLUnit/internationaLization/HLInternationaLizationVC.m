@@ -66,10 +66,13 @@
     NSString * languageStr = [[NSUserDefaults standardUserDefaults] objectForKey:LanguageKey];
     if ([languageStr isEqualToString:@"zh-Hans"]&&indexPath.section == 0) {
         [cell.hlSwitch setOn:YES];
+        [self cnLanguage];
     }else if ([languageStr isEqualToString:@"en"]&&indexPath.section == 1){
         [cell.hlSwitch setOn:YES];
+        [self enLanguage];
     }else if ([languageStr isEqualToString:@"zh-Hans-CN"]&&indexPath.section == 2){
         [cell.hlSwitch setOn:YES];
+        [self sysLanguage];
     }
     
     return cell;

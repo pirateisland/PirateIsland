@@ -33,7 +33,7 @@
     [super viewDidLoad];
     self.navigationItem.title = HLLanguage(@"是翰林啊");
     self.navigationItem.titleView.backgroundColor = HLRandomColor;
-    self.dataArray = @[@"图表",@"国际化",@"地图"];
+    self.dataArray = @[HLLanguage(@"图表"),HLLanguage(@"国际化"),HLLanguage(@"地图")];
     [self creatUI];
     self.view.backgroundColor = [UIColor colorWithHexString:HLChartLineColorStr];
 }

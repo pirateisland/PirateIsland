@@ -113,6 +113,7 @@
         [self sysLanguage];
     }
     [PLTool showCenterMessage:@"切换成功"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:changeLanguageNoticeKey object:nil];
 }
 
 @end

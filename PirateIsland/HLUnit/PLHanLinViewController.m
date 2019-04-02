@@ -33,8 +33,9 @@
     [super viewDidLoad];
     self.navigationItem.title = HLLanguage(@"是翰林啊");
     self.navigationItem.titleView.backgroundColor = HLRandomColor;
-    self.dataArray = @[HLLanguage(@"图表"),HLLanguage(@"国际化"),HLLanguage(@"地图")];
+    self.dataArray = @[@"图表",@"国际化",@"地图"];
     [self creatUI];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage) name:changeLanguageNoticeKey object:nil];
     self.view.backgroundColor = [UIColor colorWithHexString:HLChartLineColorStr];
 }
 
@@ -63,7 +64,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = self.dataArray[indexPath.row];
+    cell.textLabel.text = HLLanguage(self.dataArray[indexPath.row]);
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -82,8 +83,10 @@
 
 
 
-
-
+- (void)changeLanguage{
+    [self.hlTableView reloadData];
+    
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 

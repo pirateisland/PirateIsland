@@ -73,6 +73,7 @@
 		AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705F223A5402008C472A /* PLHHRouterMap.m */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
 		AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */; };
+		AEFD086122BE2A1B00867A6F /* PLHanLinDalyTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -212,6 +213,8 @@
 		AEF1833C2230F9D800121D93 /* PirateIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF183482230F9DA00121D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF1834B2230F9DA00121D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEFD085F22BE2A1B00867A6F /* PLHanLinDalyTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHanLinDalyTestVC.h; sourceTree = "<group>"; };
+		AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHanLinDalyTestVC.m; sourceTree = "<group>"; };
 		D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PirateIsland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -287,6 +290,7 @@
 		2C4814FE22313CE000D57D9C /* HLUnit */ = {
 			isa = PBXGroup;
 			children = (
+				AEFD085B22BE28C200867A6F /* DalyTest */,
 				AE7F92902248DDB600B6FF02 /* HLCharts */,
 				AE7F921B2244E61600B6FF02 /* internationaLization */,
 				AE04340C2244CF3D009F2119 /* HLHeatMap */,
@@ -503,6 +507,15 @@
 			path = PirateIsland;
 			sourceTree = "<group>";
 		};
+		AEFD085B22BE28C200867A6F /* DalyTest */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD085F22BE2A1B00867A6F /* PLHanLinDalyTestVC.h */,
+				AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */,
+			);
+			path = DalyTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -666,6 +679,7 @@
 				AE286C27225212C400CE2EF0 /* HLInternationaLizationCell.m in Sources */,
 				AE7F92672248D9BA00B6FF02 /* AAXAxis.m in Sources */,
 				2C17667022326B6000269E64 /* PLYanaShareVC.m in Sources */,
+				AEFD086122BE2A1B00867A6F /* PLHanLinDalyTestVC.m in Sources */,
 				AE94705C223A523F008C472A /* PLHLSecViewController.m in Sources */,
 				AE7F92702248D9BA00B6FF02 /* AAColumn.m in Sources */,
 				AE7F92772248D9BA00B6FF02 /* AALabel.m in Sources */,

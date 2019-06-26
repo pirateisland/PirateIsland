@@ -18,4 +18,6 @@
 #define M_HLChartsColumnrangeVC @"HLChartsColumnrangeVC"//柱形范围图
 #define M_HLInternationaLizationVC @"HLInternationaLizationVC"//国际化
 
+#define M_HLDalyTestVC @"PLHanLinDalyTestVC"//日常各种测试控制器
+
 #endif /* PLHHRouterMapHeader_h */

@@ -33,7 +33,16 @@
 - (AAOptions *)getOptions{
      bool bool_false = true;
     AAOptions * options = HLObject(AAOptions);
-    
+    options.titleSet(AATitle.new
+              .textSet(@"速度分布")//标题文本内容
+              .alignSet(AAChartTitleAlignTypeCenter)//标题水平居中
+              .verticalAlignSet(AAChartTitleVerticalAlignTypeMiddle)//标题垂直居中
+              .styleSet(AAStyle.new
+                        .colorSet(@"#333333")//Title font color
+                        .fontSizeSet(@"14 px")//Title font size
+                        .fontWeightSet(@"bold")//Title font weight
+                        )
+                     );
     options.seriesSet(@[
                         AASeriesElement.new
                         .nameSet(HLLanguage(@"语言热度值"))
@@ -58,12 +67,12 @@
     options.plotOptionsSet(
                            AAPlotOptions.new
                            .seriesSet(
-                                                       AASeries.new.animationSet(
-                                                                                 AAAnimation.new
-                                                                                 .easingSet(AAChartAnimationEaseOutBounce)
-                                                                                 .durationSet(@700)
-                                                                                 )
-                                                       )
+                                         AASeries.new.animationSet(
+                                                                    AAAnimation.new
+                                                                    .easingSet(AAChartAnimationEaseOutBounce)
+                                                                    .durationSet(@700)
+                                                                    )
+                                       )
                            .pieSet(
                                    AAPie.new
                                    .showInLegendSet(true)

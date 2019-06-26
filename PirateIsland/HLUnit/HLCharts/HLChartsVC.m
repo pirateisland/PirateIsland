@@ -75,6 +75,7 @@
     }else if (indexPath.row == 4){//柱形范围图
         [self.rt_navigationController pushViewController:HLGetVC(M_HLChartsColumnrangeVC) animated:YES complete:nil];
     }
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 /*

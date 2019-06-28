@@ -7,6 +7,7 @@
 //
 
 #import "PLHanLinDalyTestVC.h"
+#import "HLDalyTestCell.h"
 
 @interface PLHanLinDalyTestVC ()<UITableViewDelegate,UITableViewDataSource>
 /** tableview */
@@ -51,9 +52,9 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
-        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
+        HLDalyTestCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
         if (!cell) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell1"];
+            cell = [[HLDalyTestCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell1"];
         }
 //        cell.backgroundColor = HLRandomColor;
         return cell;
@@ -75,7 +76,8 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     HLLog(@"%ld组%ld行",indexPath.section,indexPath.row);
-    
+
+    [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
 }
 
 /*

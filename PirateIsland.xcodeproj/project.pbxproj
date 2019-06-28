@@ -74,6 +74,7 @@
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
 		AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */; };
 		AEFD086122BE2A1B00867A6F /* PLHanLinDalyTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */; };
+		AEFD08DF22C5B6F000867A6F /* HLDalyTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD08DE22C5B6EF00867A6F /* HLDalyTestCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +216,8 @@
 		AEF1834B2230F9DA00121D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEFD085F22BE2A1B00867A6F /* PLHanLinDalyTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHanLinDalyTestVC.h; sourceTree = "<group>"; };
 		AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHanLinDalyTestVC.m; sourceTree = "<group>"; };
+		AEFD08DD22C5B6EF00867A6F /* HLDalyTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLDalyTestCell.h; sourceTree = "<group>"; };
+		AEFD08DE22C5B6EF00867A6F /* HLDalyTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLDalyTestCell.m; sourceTree = "<group>"; };
 		D4A6411877DAE0871A93DA03 /* Pods_PirateIsland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PirateIsland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -512,6 +515,8 @@
 			children = (
 				AEFD085F22BE2A1B00867A6F /* PLHanLinDalyTestVC.h */,
 				AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */,
+				AEFD08DD22C5B6EF00867A6F /* HLDalyTestCell.h */,
+				AEFD08DE22C5B6EF00867A6F /* HLDalyTestCell.m */,
 			);
 			path = DalyTest;
 			sourceTree = "<group>";
@@ -666,6 +671,7 @@
 				AE7F92722248D9BA00B6FF02 /* AAStyle.m in Sources */,
 				AE7F92642248D9BA00B6FF02 /* AAAreaspline.m in Sources */,
 				AE7F926C2248D9BA00B6FF02 /* AATooltip.m in Sources */,
+				AEFD08DF22C5B6F000867A6F /* HLDalyTestCell.m in Sources */,
 				AE7F926D2248D9BA00B6FF02 /* AASubtitle.m in Sources */,
 				AE04340F2244CFB2009F2119 /* HLHeatMapVC.m in Sources */,
 				2C17666A22325B7100269E64 /* PLCollectionViewCell.m in Sources */,

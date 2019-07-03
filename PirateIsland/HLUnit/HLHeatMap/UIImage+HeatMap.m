@@ -235,6 +235,7 @@ inline static int isqrt(int x) {
             if (weightsAdjustmentEnabled) {
                 if (point_weight[i] <= absWeightSensitivity)
                     point_weight[i] *= absWeightBoostTo / absWeightSensitivity;
+                
                 else
                     point_weight[i] = absWeightBoostTo +
                     (point_weight[i] - absWeightSensitivity) *

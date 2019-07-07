@@ -13,6 +13,7 @@
 		2C17667022326B6000269E64 /* PLYanaShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C17666F22326B6000269E64 /* PLYanaShareVC.m */; };
 		2C1766732232717100269E64 /* PLShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1766722232717100269E64 /* PLShareView.m */; };
 		2C1766762232742500269E64 /* PLShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1766752232742500269E64 /* PLShareButton.m */; };
+		2C350E2C22D1F6C7002DF05B /* PLHLCameraAndPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C350E2B22D1F6C7002DF05B /* PLHLCameraAndPhotoVC.m */; };
 		2C4814EC223133BD00D57D9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E6223133BD00D57D9C /* main.m */; };
 		2C4814ED223133BD00D57D9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814E7223133BD00D57D9C /* AppDelegate.m */; };
 		2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4814F32231388700D57D9C /* PLTabBarController.m */; };
@@ -90,6 +91,8 @@
 		2C1766722232717100269E64 /* PLShareView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLShareView.m; sourceTree = "<group>"; };
 		2C1766742232742500269E64 /* PLShareButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLShareButton.h; sourceTree = "<group>"; };
 		2C1766752232742500269E64 /* PLShareButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLShareButton.m; sourceTree = "<group>"; };
+		2C350E2A22D1F6C7002DF05B /* PLHLCameraAndPhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHLCameraAndPhotoVC.h; sourceTree = "<group>"; };
+		2C350E2B22D1F6C7002DF05B /* PLHLCameraAndPhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHLCameraAndPhotoVC.m; sourceTree = "<group>"; };
 		2C4814E5223133BD00D57D9C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C4814E6223133BD00D57D9C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C4814E7223133BD00D57D9C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -233,6 +236,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C350E2422D04166002DF05B /* HLPublic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HLPublic;
+			sourceTree = "<group>";
+		};
+		2C350E2522D1F3A7002DF05B /* HLCameraAndPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				2C350E2A22D1F6C7002DF05B /* PLHLCameraAndPhotoVC.h */,
+				2C350E2B22D1F6C7002DF05B /* PLHLCameraAndPhotoVC.m */,
+			);
+			path = HLCameraAndPhoto;
+			sourceTree = "<group>";
+		};
 		2C4814E4223133BD00D57D9C /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +312,8 @@
 		2C4814FE22313CE000D57D9C /* HLUnit */ = {
 			isa = PBXGroup;
 			children = (
+				2C350E2522D1F3A7002DF05B /* HLCameraAndPhoto */,
+				2C350E2422D04166002DF05B /* HLPublic */,
 				AEFD085B22BE28C200867A6F /* DalyTest */,
 				AE7F92902248DDB600B6FF02 /* HLCharts */,
 				AE7F921B2244E61600B6FF02 /* internationaLization */,
@@ -697,6 +718,7 @@
 				AE286C18224DF9E100CE2EF0 /* HLChartsPieVC.m in Sources */,
 				AE7F929C2248DDEA00B6FF02 /* HLYAxis.m in Sources */,
 				AE7F926B2248D9BA00B6FF02 /* AALine.m in Sources */,
+				2C350E2C22D1F6C7002DF05B /* PLHLCameraAndPhotoVC.m in Sources */,
 				AE7F92712248D9BA00B6FF02 /* AAPlotLinesElement.m in Sources */,
 				AE0434122244D56D009F2119 /* UIImage+HeatMap.m in Sources */,
 				2C4814EC223133BD00D57D9C /* main.m in Sources */,

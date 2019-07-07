@@ -33,7 +33,7 @@
     [super viewDidLoad];
     self.navigationItem.title = HLLanguage(@"是翰林啊");
     self.navigationItem.titleView.backgroundColor = HLRandomColor;
-    self.dataArray = @[@"图表",@"国际化",@"地图",@"日常测试"];
+    self.dataArray = @[@"图表",@"国际化",@"地图",@"日常测试",@"相机和相册"];
     [self creatUI];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage) name:changeLanguageNoticeKey object:nil];
     self.view.backgroundColor = [UIColor colorWithHexString:HLChartLineColorStr];
@@ -74,6 +74,8 @@
         [self.rt_navigationController pushViewController:HLGetVC(M_HLInternationaLizationVC) animated:YES complete:nil];
     }else if (indexPath.row == 3){
         [self.rt_navigationController pushViewController:HLGetVC(M_HLDalyTestVC) animated:YES complete:nil];
+    }else if (indexPath.row == 4){
+        [self.rt_navigationController pushViewController:HLGetVC(M_PLHLCameraAndPhotoVC) animated:YES complete:nil];
     }
 }
 

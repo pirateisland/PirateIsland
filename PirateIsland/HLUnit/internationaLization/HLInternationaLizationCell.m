@@ -31,12 +31,12 @@
         make.centerY.mas_equalTo(0);
         make.right.mas_equalTo(-20);
     }];
-    [self.hlSwitch addTarget:self action:@selector(hlSwitchClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.hlSwitch addTarget:self action:@selector(hlSwitchClick:) forControlEvents:UIControlEventValueChanged];
 }
 - (void)hlSwitchClick:(UISwitch*)sender{
     if (!sender.on) {
-        [self.hlSwitch setOn:YES];
         [PLTool showCenterMessage:@"必须选择一项"];
+        [self.hlSwitch setOn:YES];
         return;
     }
     if (self.hlSwitchClickBlock && sender.on) {

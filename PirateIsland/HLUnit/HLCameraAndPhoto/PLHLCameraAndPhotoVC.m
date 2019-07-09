@@ -41,7 +41,13 @@
     self.imagePickerController.allowsEditing = YES;
     UIAlertAction * action1 = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            
             self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            self.imagePickerController.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
+            self.imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModeVideo;
+            self.imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
+            
+
             [self presentViewController:self.imagePickerController animated:YES completion:nil];
         }else{
             [PLTool showTopMessage:@"此设备不支持相机"];
@@ -67,42 +73,30 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [self alertVC];
-//    NSUInteger sourceType = 0;
-//    // 判断系统是否支持相机
-//    self.imagePickerController = [[UIImagePickerController alloc] init];
-//    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-//        self.imagePickerController.delegate = self; //设置代理
-//        self.imagePickerController.allowsEditing = YES;
-//        self.imagePickerController.sourceType = sourceType; //图片来源
-//        if (buttonIndex == 0) {
-//            return;
-//        }else if (buttonIndex == 1) {
-//            //拍照
-//            sourceType = UIImagePickerControllerSourceTypeCamera;
-//            self.imagePickerController.sourceType = sourceType;
-//            [self presentViewController:self.imagePickerController animated:YES completion:nil];
-//        }else if (buttonIndex == 2){
-//            //相册
-//            sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-//            self.imagePickerController.sourceType = sourceType;
-//            [self presentViewController:self.imagePickerController animated:YES completion:nil];
-        }
+ }
 
 #pragma mark -实现图片选择器代理-（上传图片的网络请求也是在这个方法里面进行，这里我不再介绍具体怎么上传图片）
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [picker dismissViewControllerAnimated:YES completion:^{}];
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage]; //通过key值获取到图片
     self.showImageView.image = image;  //给UIimageView赋值已经选择的相片
-    
-    
-    //上传图片到服务器--在这里进行图片上传的网络请求，这里不再介绍
-//    ......
+    NSString * mediaType = [info objectForKey:UIImagePickerControllerMediaType];
+//    if ([mediaType isEqualToString:(NSString *)UTTypeImage] && picker.sourceType ==UIImagePickerControllerSourceTypeCamera){
+//        
+//    }
+     UIImage * sourceImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+//     UIImageWriteToSavedPhotosAlbum(sourceImage,self,nil,nil);
+     UIImageWriteToSavedPhotosAlbum(sourceImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+
 }
 //当用户取消选择的时候，调用该方法
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [picker dismissViewControllerAnimated:YES completion:^{}];
 }
-
+//保存照片成功后的回调
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
+    HLLog(@"==%@==%@===%@",error,image,contextInfo);
+}
 
 /*
 #pragma mark - Navigation

@@ -41,12 +41,12 @@
     self.imagePickerController.allowsEditing = YES;
     UIAlertAction * action1 = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-            
+
             self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
             self.imagePickerController.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
             self.imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModeVideo;
             self.imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
-            
+
 
             [self presentViewController:self.imagePickerController animated:YES completion:nil];
         }else{
@@ -60,12 +60,21 @@
         self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:self.imagePickerController animated:YES completion:nil];
     }];
-    UIAlertAction * action3 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction * action3 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     [alertVC addAction:action1];
     [alertVC addAction:action2];
     [alertVC addAction:action3];
+    
+    UIPopoverPresentationController *popover = alertVC.popoverPresentationController;
+    
+    if (popover) {
+        
+        popover.permittedArrowDirections = UIPopoverArrowDirectionLeft;
+        popover.sourceView = self.showImageView;
+        popover.sourceRect = self.showImageView.bounds;
+    }
     
     [self.navigationController presentViewController:alertVC animated:YES completion:nil];
     //    [alertVC showViewController:self sender:nil];

@@ -37,6 +37,7 @@
     [self creatUI];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage) name:changeLanguageNoticeKey object:nil];
     self.view.backgroundColor = [UIColor colorWithHexString:HLChartLineColorStr];
+ 
 }
 
 #pragma mark - UI about

@@ -31,6 +31,25 @@
     }];
     
     
+    UILabel * lab1 = [UILabel new];
+    [self.view addSubview:lab1];
+    lab1.backgroundColor = HLRandomColor;
+    lab1.text = @"相机和相册相机和相册相机和相册相机和相";
+    [lab1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(100);
+        make.left.mas_equalTo(0);
+    }];
+    
+    UILabel * lab2 = [UILabel new];
+    [self.view addSubview:lab2];
+    lab2.backgroundColor = HLRandomColor;
+    lab2.text = @"---------===------======-------------";
+    [lab2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(100);
+        make.left.mas_equalTo(lab1.mas_right).offset(20);
+        make.right.mas_equalTo(-10);
+    }];
+    
     
 }
 - (void)alertVC{

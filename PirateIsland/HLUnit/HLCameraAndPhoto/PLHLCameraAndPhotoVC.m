@@ -7,6 +7,7 @@
 //
 
 #import "PLHLCameraAndPhotoVC.h"
+#import <Photos/Photos.h>
 
 @interface PLHLCameraAndPhotoVC ()<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property(nonatomic,strong) UIImagePickerController *imagePickerController; //声明全局的UIImagePickerController
@@ -105,6 +106,72 @@
 //保存照片成功后的回调
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
     HLLog(@"==%@==%@===%@",error,image,contextInfo);
+}
+//检查是否存在某一个名字的相册
+- (BOOL)isExistPhotosAlbum:(NSString *)albumName {
+    //首先获取用户手动创建相册的集合
+    PHFetchResult *collectonResuts = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
+    __block BOOL isExisted = NO;
+    //对获取到集合进行遍历
+    [collectonResuts enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        PHAssetCollection *assetCollection = obj;
+        // albumName是自定义的要写入照片的相册
+        if ([assetCollection.localizedTitle isEqualToString:albumName])  {
+            isExisted = YES;
+        }
+    }];
+    
+    return isExisted;
+}
+//如果不存在，则创建自定义相册
+- (void)createPhotosAlbum:(NSString *)albumName {
+    if (![self isExistPhotosAlbum:albumName]) {
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            // 创建相册
+            [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:albumName];
+            
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                NSLog(@"创建相册文件夹成功!");
+            } else {
+                NSLog(@"创建相册文件夹失败:%@", error);
+            }
+        }];
+    }
+}
+//保存照片
+- (void)saveImage:(NSString *)imagePath{
+    NSURL *url = [NSURL fileURLWithPath:imagePath];
+    
+    // 要保存到系统相册中的图片的标识
+    __block NSString *localIdentifier;
+    
+    // 获取相册的集合
+    PHFetchResult *collectonResuts = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
+    // 对获取到集合进行遍历
+    [collectonResuts enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        PHAssetCollection *assetCollection = obj;
+        // _albumName是我们写入照片的相册
+        if ([assetCollection.localizedTitle isEqualToString:@"_albumName"])  {
+            [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+                // 请求创建一个Asset
+                PHAssetChangeRequest *assetRequest = [PHAssetChangeRequest creationRequestForAssetFromImageAtFileURL:url];
+                // 请求编辑相册
+                PHAssetCollectionChangeRequest *collectonRequest = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:assetCollection];
+                // 为Asset创建一个占位符，放到相册编辑请求中
+                PHObjectPlaceholder *placeHolder = [assetRequest placeholderForCreatedAsset];
+                // 相册中添加照片
+                [collectonRequest addAssets:@[placeHolder]];
+                localIdentifier = placeHolder.localIdentifier;
+            } completionHandler:^(BOOL success, NSError *error) {
+                if (success) {
+                    NSLog(@"保存图片成功!");
+                } else {
+                    NSLog(@"保存图片失败:%@", error);
+                }
+            }];
+        }
+    }];
 }
 
 /*

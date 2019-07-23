@@ -56,7 +56,6 @@
         if (!cell) {
             cell = [[HLDalyTestCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell1"];
         }
-//        cell.backgroundColor = HLRandomColor;
         return cell;
     }else{
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];

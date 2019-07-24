@@ -26,32 +26,34 @@
     UIImageView * imageView = [UIImageView new];
     self.showImageView = imageView;
     [self.view addSubview:imageView];
+    imageView.backgroundColor = HLRandomColor;
+    [imageView addObserver:self forKeyPath:@"backgroundColor" options:NSKeyValueObservingOptionNew context:nil];
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.mas_equalTo(100);
         make.size.mas_equalTo(CGSizeMake(200, 100));
     }];
     
-    
-    UILabel * lab1 = [UILabel new];
-    [self.view addSubview:lab1];
-    lab1.backgroundColor = HLRandomColor;
-    lab1.text = @"相机和相册相机和相册相机和相册相机和相";
-    [lab1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(100);
-        make.left.mas_equalTo(0);
+    UIButton * cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:cameraBtn];
+    [cameraBtn setTitle:@"相机或者相册" forState:UIControlStateNormal];
+    [cameraBtn addTarget:self action:@selector(cameraBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [cameraBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.showImageView.mas_bottom).offset(0);
+        make.centerX.mas_equalTo(self.showImageView.mas_centerX);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
     }];
     
-    UILabel * lab2 = [UILabel new];
-    [self.view addSubview:lab2];
-    lab2.backgroundColor = HLRandomColor;
-    lab2.text = @"---------===------======-------------";
-    [lab2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(100);
-        make.left.mas_equalTo(lab1.mas_right).offset(20);
-        make.right.mas_equalTo(-10);
-    }];
+}
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    NSLog(@"keyPath=%@---object=%@---change=%@---context%@",keyPath,object,change,context);
     
     
+}
+- (void)dealloc{
+    [self.showImageView removeObserver:self forKeyPath:@"backgroundColor"];
+}
+- (void)cameraBtnClick:(UIButton*)sender{
+    [self alertVC];
 }
 - (void)alertVC{
     UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:@"选择功能" message:@"选择相机或者相机等" preferredStyle:UIAlertControllerStyleActionSheet];
@@ -101,7 +103,10 @@
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [self alertVC];
+    self.showImageView.backgroundColor = HLRandomColor;
+    self.showImageView.backgroundColor = HLRandomColor;
+    
+   
  }
 
 #pragma mark -实现图片选择器代理-（上传图片的网络请求也是在这个方法里面进行，这里我不再介绍具体怎么上传图片）

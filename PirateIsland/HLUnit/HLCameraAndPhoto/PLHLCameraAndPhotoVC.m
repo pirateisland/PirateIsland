@@ -124,7 +124,7 @@
 }
 //保存照片成功后的回调
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
-    HLLog(@"==%@==%@===%@",error,image,contextInfo);
+//    HLLog(@"==%@==%@===%@",error,image,contextInfo);
 }
 //检查是否存在某一个名字的相册
 - (BOOL)isExistPhotosAlbum:(NSString *)albumName {

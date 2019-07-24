@@ -74,7 +74,7 @@
     }
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    HLLog(@"%ld组%ld行",indexPath.section,indexPath.row);
+    HLLog(@"%ld组%ld行",indexPath.section,indexPath.row);
 
     [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
 }

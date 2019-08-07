@@ -72,6 +72,8 @@
 		AE7F92AC2249B2EA00B6FF02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE7F92AE2249B2EA00B6FF02 /* Localizable.strings */; };
 		AE94705C223A523F008C472A /* PLHLSecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705B223A523F008C472A /* PLHLSecViewController.m */; };
 		AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705F223A5402008C472A /* PLHHRouterMap.m */; };
+		AEC33C9A22F9285600443D98 /* UIView+DDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC33C9622F9285600443D98 /* UIView+DDExtension.m */; };
+		AEC33C9B22F9285600443D98 /* DDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC33C9822F9285600443D98 /* DDCardView.m */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
 		AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */; };
 		AEFD086122BE2A1B00867A6F /* PLHanLinDalyTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */; };
@@ -214,6 +216,10 @@
 		AE94705E223A5402008C472A /* PLHHRouterMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHHRouterMap.h; sourceTree = "<group>"; };
 		AE94705F223A5402008C472A /* PLHHRouterMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLHHRouterMap.m; sourceTree = "<group>"; };
 		AE947061223A5E25008C472A /* PLHHRouterMapHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLHHRouterMapHeader.h; sourceTree = "<group>"; };
+		AEC33C9622F9285600443D98 /* UIView+DDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDExtension.m"; sourceTree = "<group>"; };
+		AEC33C9722F9285600443D98 /* DDCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCardView.h; sourceTree = "<group>"; };
+		AEC33C9822F9285600443D98 /* DDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCardView.m; sourceTree = "<group>"; };
+		AEC33C9922F9285600443D98 /* UIView+DDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDExtension.h"; sourceTree = "<group>"; };
 		AEF1833C2230F9D800121D93 /* PirateIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF183482230F9DA00121D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF1834B2230F9DA00121D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -239,6 +245,7 @@
 		2C350E2422D04166002DF05B /* HLPublic */ = {
 			isa = PBXGroup;
 			children = (
+				AEC33C9522F9285600443D98 /* HLCardView */,
 			);
 			path = HLPublic;
 			sourceTree = "<group>";
@@ -498,6 +505,17 @@
 			path = PLHHRouterSupportingFiles;
 			sourceTree = "<group>";
 		};
+		AEC33C9522F9285600443D98 /* HLCardView */ = {
+			isa = PBXGroup;
+			children = (
+				AEC33C9922F9285600443D98 /* UIView+DDExtension.h */,
+				AEC33C9622F9285600443D98 /* UIView+DDExtension.m */,
+				AEC33C9722F9285600443D98 /* DDCardView.h */,
+				AEC33C9822F9285600443D98 /* DDCardView.m */,
+			);
+			path = HLCardView;
+			sourceTree = "<group>";
+		};
 		AEF183332230F9D800121D93 = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +701,7 @@
 				AE7F92782248D9BA00B6FF02 /* AALegend.m in Sources */,
 				AE7F92692248D9BA00B6FF02 /* AADataLabels.m in Sources */,
 				2C17666722325A9400269E64 /* PLCollectionView.m in Sources */,
+				AEC33C9B22F9285600443D98 /* DDCardView.m in Sources */,
 				AE7F927D2248D9BA00B6FF02 /* AAChart.m in Sources */,
 				AE7F92662248D9BA00B6FF02 /* AASeries.m in Sources */,
 				2C48150122313D0600D57D9C /* PLHanLinViewController.m in Sources */,
@@ -703,6 +722,7 @@
 				AE7F929B2248DDEA00B6FF02 /* HLXAxis.m in Sources */,
 				AE7F927F2248D9BA00B6FF02 /* AAChartModel.m in Sources */,
 				AE286C212252041600CE2EF0 /* HLChartsColumnrangeVC.m in Sources */,
+				AEC33C9A22F9285600443D98 /* UIView+DDExtension.m in Sources */,
 				AE7F927B2248D9BA00B6FF02 /* AAItemStyle.m in Sources */,
 				2C4814F42231388700D57D9C /* PLTabBarController.m in Sources */,
 				AE286C27225212C400CE2EF0 /* HLInternationaLizationCell.m in Sources */,

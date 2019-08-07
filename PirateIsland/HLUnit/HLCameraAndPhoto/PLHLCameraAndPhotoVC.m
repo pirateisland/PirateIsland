@@ -8,6 +8,7 @@
 
 #import "PLHLCameraAndPhotoVC.h"
 #import <Photos/Photos.h>
+#import "DDCardView.h"
 
 @interface PLHLCameraAndPhotoVC ()<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property(nonatomic,strong) UIImagePickerController *imagePickerController; //声明全局的UIImagePickerController
@@ -21,6 +22,24 @@
     // Do any additional setup after loading the view.
     self.title = @"相机和相册";
     [self creatUI];
+    
+    UIView *test = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
+    test.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"home_hanlin_normal"]];
+    
+    UIView *testTwo = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
+    testTwo.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"home_yana_select"]];
+    
+    
+    DDCardView *testCard = [[DDCardView alloc]initWithFrame:CGRectMake(300, 300, 200, 200)
+                                                      front:test
+                                                       back:testTwo
+                                                   tapBlock:^(BOOL isBack, UIView * _Nonnull tapView) {
+                                                       
+                                                   }];
+//    testCard.isBack = 1;
+//    testCard.canNotTap = NO;
+    testCard.panOrSwipeBack = NO;
+    [self.view addSubview:testCard];
 }
 - (void)creatUI{
     UIImageView * imageView = [UIImageView new];
@@ -103,8 +122,10 @@
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    self.showImageView.backgroundColor = HLRandomColor;
-    self.showImageView.backgroundColor = HLRandomColor;
+//    self.showImageView.backgroundColor = HLRandomColor;
+//    self.showImageView.backgroundColor = HLRandomColor;
+    
+
     
    
  }

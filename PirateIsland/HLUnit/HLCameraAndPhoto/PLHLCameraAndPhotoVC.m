@@ -124,12 +124,40 @@
     
 //    self.showImageView.backgroundColor = HLRandomColor;
 //    self.showImageView.backgroundColor = HLRandomColor;
-    
 
-    
-   
+//    self.showImageView.image = [self generateBarCode:@"1234567" width:200 height:100];
+    self.showImageView.image = [self generateBarCode:@"234323223232" size:CGSizeMake(200, 100) color:[UIColor blackColor] backGroundColor:HLWhiteColor];
  }
-
+//条形码生成
+- (UIImage *)generateBarCode:(NSString *)code size:(CGSize)size color:(UIColor *)color backGroundColor:(UIColor *)backGroundColor{
+    // 生成条形码图片
+    CIImage *barcodeImage;
+    NSData *data = [code dataUsingEncoding:NSISOLatin1StringEncoding allowLossyConversion:false];
+    CIFilter *filter = [CIFilter filterWithName:@"CICode128BarcodeGenerator"];
+    [filter setValue:data forKey:@"inputMessage"];
+    //设置条形码颜色和背景颜色
+    CIFilter * colorFilter = [CIFilter filterWithName:@"CIFalseColor"];
+    [colorFilter setValue:filter.outputImage forKey:@"inputImage"];
+    //条形码颜色
+    if (color == nil) {
+        color = [UIColor blackColor];
+    }
+    if (backGroundColor == nil) {
+        backGroundColor = [UIColor whiteColor];
+    }
+    [colorFilter setValue:[CIColor colorWithCGColor:color.CGColor] forKey:@"inputColor0"];
+    //背景颜色
+    [colorFilter setValue:[CIColor colorWithCGColor:backGroundColor.CGColor] forKey:@"inputColor1"];
+    
+    barcodeImage = [colorFilter outputImage];
+    
+    // 消除模糊
+    CGFloat scaleX = size.width / barcodeImage.extent.size.width; // extent 返回图片的frame
+    CGFloat scaleY = size.height / barcodeImage.extent.size.height;
+    CIImage *transformedImage = [barcodeImage imageByApplyingTransform:CGAffineTransformScale(CGAffineTransformIdentity, scaleX, scaleY)];
+    
+    return [UIImage imageWithCIImage:transformedImage];
+}
 #pragma mark -实现图片选择器代理-（上传图片的网络请求也是在这个方法里面进行，这里我不再介绍具体怎么上传图片）
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [picker dismissViewControllerAnimated:YES completion:^{}];

@@ -74,6 +74,7 @@
 		AE947060223A5402008C472A /* PLHHRouterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94705F223A5402008C472A /* PLHHRouterMap.m */; };
 		AEC33C9A22F9285600443D98 /* UIView+DDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC33C9622F9285600443D98 /* UIView+DDExtension.m */; };
 		AEC33C9B22F9285600443D98 /* DDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC33C9822F9285600443D98 /* DDCardView.m */; };
+		AEC33CA72303ABF600443D98 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC33CA52303ABF400443D98 /* CreatQRCodeAndBarCodeFromLeon.m */; };
 		AEF183492230F9DA00121D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF183482230F9DA00121D93 /* Assets.xcassets */; };
 		AEF1834C2230F9DA00121D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF1834A2230F9DA00121D93 /* LaunchScreen.storyboard */; };
 		AEFD086122BE2A1B00867A6F /* PLHanLinDalyTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD086022BE2A1B00867A6F /* PLHanLinDalyTestVC.m */; };
@@ -220,6 +221,8 @@
 		AEC33C9722F9285600443D98 /* DDCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCardView.h; sourceTree = "<group>"; };
 		AEC33C9822F9285600443D98 /* DDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCardView.m; sourceTree = "<group>"; };
 		AEC33C9922F9285600443D98 /* UIView+DDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDExtension.h"; sourceTree = "<group>"; };
+		AEC33CA52303ABF400443D98 /* CreatQRCodeAndBarCodeFromLeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCodeAndBarCodeFromLeon.m; sourceTree = "<group>"; };
+		AEC33CA62303ABF500443D98 /* CreatQRCodeAndBarCodeFromLeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatQRCodeAndBarCodeFromLeon.h; sourceTree = "<group>"; };
 		AEF1833C2230F9D800121D93 /* PirateIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF183482230F9DA00121D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF1834B2230F9DA00121D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 		2C350E2422D04166002DF05B /* HLPublic */ = {
 			isa = PBXGroup;
 			children = (
+				AEC33CA62303ABF500443D98 /* CreatQRCodeAndBarCodeFromLeon.h */,
+				AEC33CA52303ABF400443D98 /* CreatQRCodeAndBarCodeFromLeon.m */,
 				AEC33C9522F9285600443D98 /* HLCardView */,
 			);
 			path = HLPublic;
@@ -743,6 +748,7 @@
 				AE0434122244D56D009F2119 /* UIImage+HeatMap.m in Sources */,
 				2C4814EC223133BD00D57D9C /* main.m in Sources */,
 				AE286C1B224E258200CE2EF0 /* HLChartsColumnVC.m in Sources */,
+				AEC33CA72303ABF600443D98 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				AE286C1E2251FAE300CE2EF0 /* HLChartsScatterVC.m in Sources */,
 				2C4814F72231396E00D57D9C /* PLBaseViewController.m in Sources */,
 				2C1766732232717100269E64 /* PLShareView.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "PLHanLinDalyTestVC.h"
 #import "HLDalyTestCell.h"
+#import "PLSliderTestViewController.h"
 
 @interface PLHanLinDalyTestVC ()<UITableViewDelegate,UITableViewDataSource>
 /** tableview */
@@ -77,7 +78,13 @@
     HLLog(@"%ld组%ld行",indexPath.section,indexPath.row);
 
     [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    
+    PLSliderTestViewController * PLSTVC = [PLSliderTestViewController new];
+    [self.navigationController pushViewController:PLSTVC animated:YES];
 }
+
+
+
 
 /*
 #pragma mark - Navigation

@@ -41,7 +41,7 @@
     .markerSymbolStyleSet(AAChartSymbolStyleTypeBorderBlank)
     .chartTypeSet(AAChartTypeLine)
     .categoriesSet(@[HLLanguage(@"一月"), HLLanguage(@"二月"), HLLanguage(@"三月"), HLLanguage(@"四月"), HLLanguage(@"五月"), HLLanguage(@"六月"), HLLanguage(@"七月"), HLLanguage(@"八月"), HLLanguage(@"九月"),HLLanguage( @"十月"), HLLanguage(@"十一月"), HLLanguage(@"十二月")])
-    .dataLabelEnabledSet(true)
+//    .dataLabelEnabledSet(true)
     .colorsThemeSet(@[@"#1e90ff",@"#EA007B", @"#49C1B6", @"#FDC20A", @"#F78320", @"#068E81",])
     .seriesSet(@[
                  AASeriesElement.new

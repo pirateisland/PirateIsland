@@ -15,5 +15,7 @@ pod 'YYKit'
 pod 'HHRouter', '~> 0.1.8'
 pod 'Toast', '~> 4.0.0'
 pod 'SDWebImage', '~> 4.4.1'
+#pod 'Highcharts', '~> 7.1.3' //https://github.com/highcharts/highcharts-ios
+pod 'AAChartKit', :git => 'https://github.com/AAChartModel/AAChartKit.git'
 
 end
